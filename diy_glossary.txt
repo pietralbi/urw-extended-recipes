@@ -22,6 +22,7 @@
 .Bone Club. "Club" [effort:2] [phys:arms, one-armed] *CARPENTRY* /10/
 {Bone} [remove] [noquality]
 {Cutting weapon} <Axe>
+[MATERIAL:bone]
 [WEIGHT:2]
 [PRICE:0]
 [POINT_ATTACK:0]
@@ -35,6 +36,7 @@
 {Bone} [remove] [noquality]
 {Tying equipment} [remove]
 {Cutting weapon} <Axe>
+[TILEGFX:bc-bonespear]
 [WEIGHT:2]
 [PRICE:0]
 [POINT_ATTACK:7]
@@ -66,6 +68,24 @@
 {Feather} (3) [remove] [patchwise] [noquality]
 {Tying equipment} [remove] [patchwise] 
 {Knife}
+
+.Bone arrow. "Broadhead arrow" [effort:1] [phys:hands,one-armed] *CARPENTRY* /45/ [patch:5]
+{Branch}   [remove] [patchwise] [noquality]
+{Knife}
+{Feather} (3) [remove] [patchwise] [noquality]
+{Tying equipment} [remove] [patchwise] 
+{Bone} #0.1# [remove] [patchwise] [noquality]
+[MATERIAL:bone]
+[NAME:Bone arrow]
+
+.Antler-tip arrow. "Blunt arrow" [effort:1] [phys:hands,one-armed] *CARPENTRY* /30/ [patch:5]
+{Branch}   [remove] [patchwise] [noquality]
+{Knife}
+{Feather} (3) [remove] [patchwise] [noquality]
+{Tying equipment} [remove] [patchwise] 
+{*antler} #0.1# [remove] [noquality] [patchwise]
+[MATERIAL:antler]
+[NAME:Antler-tip arrow]
 
 [SUBMENU_END:weapon]
 
