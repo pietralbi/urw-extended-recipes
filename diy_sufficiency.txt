@@ -29,11 +29,19 @@
 {Staff} (2) [ground] '+to help the weaving'
 {Knife} <Small knife>
 
+.Bone fish hook. "Hunting horn" [effort:1] [phys:arms,hands] *CARPENTRY* %-30% /60/
+{Bone} [remove] [noquality]
+{Knife}<Small knife>
+[TYPE:tool]
+[MATERIAL:bone]
+[WEIGHT:0.05]
+[TILEGFX:bc-hook]
+
 .Fishing rod. *FISHING* [effort:1] [phys:arms,hands] /30/
 {Tying equipment} (2) [remove]
 {Staff} [ground] [remove]
 {Birch-bark} (2) [remove] '+for a float'
-{Fish hook} [remove]
+{*fish hook} [remove]
 {Knife} <Small knife>
 
 .Wooden tub. [effort:2] [phys:arms,hands] *CARPENTRY* /3h/
