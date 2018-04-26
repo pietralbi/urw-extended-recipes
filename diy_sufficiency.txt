@@ -17,7 +17,7 @@
 [WEIGHT:0.5]
 
 .Sauna scoop. *CARPENTRY* [effort:1] [phys:arms,hands] /60/ %10% |-1|
-{Block of wood} [remove]
+{Block of wood} [remove][noquality]
 {Board} [remove]
 {Axe} <Carving axe>
 {Knife} <Small knife>
@@ -92,7 +92,7 @@
 // We could make this more complicated by making you peel off a big piece instead of in small
 // 1/2 lb increments, but I like the extra work this takes.
 .Birch-bark canoe. "Punt" *CARPENTRY* [effort:3] [phys:arms,stance] /8h/ %-10% |2|
-{Birch-bark} #20# [remove] [ground]
+{Birch-bark} #20# [remove] [ground] [noquality]
 {Tying equipment} (16) [remove] [ground]
 {Board} [remove] [ground]
 {[NEARBY_TILE:Water]} 'Must be near water'
