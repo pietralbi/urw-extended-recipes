@@ -74,7 +74,7 @@
 {Knife}
 {Feather} (3) [remove] [patchwise] [noquality]
 {Tying equipment} [remove] [patchwise] 
-{Bone} #0.1# [remove] [patchwise] [noquality]
+{Bone} #0.2# [remove] [patchwise] [noquality]
 [MATERIAL:bone]
 [NAME:Bone arrow]
 
@@ -83,7 +83,7 @@
 {Knife}
 {Feather} (3) [remove] [patchwise] [noquality]
 {Tying equipment} [remove] [patchwise] 
-{Antler} #0.1# [remove] [noquality] [patchwise]
+{Antler} #0.2# [remove] [noquality] [patchwise]
 [MATERIAL:antler]
 [NAME:Antler-tip arrow]
 [BLUNT_ATTACK:8]
