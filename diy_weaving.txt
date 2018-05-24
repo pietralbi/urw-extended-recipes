@@ -456,7 +456,7 @@
 {Woollen *} #0.25# [remove] 'Wool scraps'
 {Knife} <Small knife>
 
-.Woollen patchwork trousers. "Woollen Trousers" /5.5h/ *HIDEWORKING* |1| [effort:0] [phys:arms,hands,one-armed]
+.Woollen patchwork trousers. "Woollen Trousers" /5.5h/ *HIDEWORKING* |2| [effort:0] [phys:arms,hands,one-armed]
 {Woollen *} #5.5# [remove] 'Wool scraps'
 {Homespun Yarn} #2# [remove]
 {Knife} <Small knife>
