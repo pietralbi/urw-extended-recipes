@@ -103,7 +103,8 @@
 {Birch-bark} #20# [remove] [ground]
 {Tying equipment} (16) [remove] [ground]
 {Board} [remove] [ground]
-{[NEARBY_TILE:Water]} 'Must be near water'
+{Water} #9999# [remove] 'Must be near water'
+//{[NEARBY_TILE:Water]} 'Must be near water'
 {Fire} [ground]
 {Axe} <Carving axe>
 {Knife} <Small knife>
