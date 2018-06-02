@@ -52,19 +52,19 @@
 [PRICE:0]
 [WEIGHT:0.1]
 
-.Spin Yarn. "Hunting Horn" *HIDEWORKING* /1h/ [patch:5] [effort:1] [phys:hands,one-armed]
-{Raw Plant Fibre} #0.5# [remove] [patchwise]
+.Spin Yarn. "Hunting Horn" *HIDEWORKING* /5h/ [effort:1] [phys:hands,one-armed] |2|
+{Raw Plant Fibre} #2.5# [remove] [patchwise]
 {Spool} [remove] [patchwise]
 {Spindle and Distaff}
 [NAME:Homespun Yarn]
 [TILEGFX:it-yarn]
 [TYPE:tool]
 [MATERIAL:cloth]
-[PRICE:5]
-[WEIGHT:0.5]
+[PRICE:25]
+[WEIGHT:2.5]
 
 .Weave Cloth. "Bandage" /6h/ *HIDEWORKING* [effort:2] [phys:arms,hands,stance]
-{Homespun Yarn} (10) [remove]
+{Homespun Yarn} (2) [remove]
 {Loom} [ground]
 [NAME:Homespun Cloth]
 [TILEGFX:it-cloth]
