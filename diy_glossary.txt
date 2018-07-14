@@ -23,6 +23,7 @@
 {Bone} [remove] [noquality]
 {Cutting weapon} <Axe>
 [MATERIAL:bone]
+[TILEGFX:wp-boneclub]
 [WEIGHT:2]
 [PRICE:0]
 [POINT_ATTACK:0]
@@ -36,7 +37,7 @@
 {Bone} [remove] [noquality]
 {Tying equipment} [remove]
 {Cutting weapon} <Axe>
-[TILEGFX:bc-bonespear]
+[TILEGFX:wp-bonejav]
 [WEIGHT:2]
 [PRICE:2]
 [POINT_ATTACK:7]
@@ -137,7 +138,7 @@
 {Cloth} #0.5# [remove] [patchwise]
 {Knife}
 
-.Bandage. [effort:1] [phys:hands,one-armed] *COMMON*   [noquality]   [patch:10]
+.Bandage. [effort:1] [phys:hands,one-armed] *COMMON* [patch:10]
 {Cloth} #1# [remove]          [patchwise]
 {Cutting weapon or by hand}
 
@@ -193,7 +194,7 @@
 {Leather}  #1# [remove]
 
 .Raft.  [effort:3] [phys:stance,arms]	*COMMON*	/80/
-{Tree trunk}	(3) 	[remove] [noquality]	
+{Tree trunk}	(3) 	[remove] [noquality]
 {Rope}		(3)	[remove]
 {Cutting weapon} <Axe> 			
 

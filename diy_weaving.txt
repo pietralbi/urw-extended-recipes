@@ -41,9 +41,9 @@
 [WEIGHT:0.25]
 
 .Extract Fibre from Plants. "Hunting Horn" [noquality] *AGRICULTURE* /15/ [patch:10] [effort:2] [phys:arms,stance]
-{Dried Retted Plants} [remove] [patchwise] [ground] 'Retted and dried plants'
-{Club} '+for scutching'
-{Heckling Comb}
+{Dried Retted Plants} (4) [remove] [patchwise] [ground] 'Retted and dried plants'
+{*Club} 'Club to beat the stalks'
+{Heckling Comb} '+to remove the pith'
 {Knife} <Small knife>
 [NAME:Raw Plant Fibre]
 [TILEGFX:it-fibre]
@@ -54,7 +54,7 @@
 
 .Spin Yarn. "Hunting Horn" *HIDEWORKING* /5h/ [effort:1] [phys:hands,one-armed] |2|
 {Raw Plant Fibre} #2.5# [remove] [patchwise]
-{Spool} [remove] [patchwise]
+{Spool} [remove] [noquality]] [patchwise]
 {Spindle and Distaff}
 [NAME:Homespun Yarn]
 [TILEGFX:it-yarn]
@@ -75,7 +75,7 @@
 
 .Shred Cloth for Yarn. "Hunting Horn" *HIDEWORKING* /1h/ [patchwise:5] [effort:1] [phys:hands,one-armed]
 {Cloth} #0.75# [remove] [patchwise]
-{Spool} [remove] [patchwise]
+{Spool} [remove] [noquality] [patchwise]
 {Knife} <Small knife>
 [NAME:Homespun Yarn]
 [TILEGFX:it-yarn]
@@ -114,8 +114,8 @@
 
 [SUBMENU_START:Crafting tools]
 // TODO: new graphic
-.Spool. "Hunting Horn" *CARPENTRY* /15/ [effort:1] [phys:hands]
-{Wooden Stake} [remove]
+.Spool. "Hunting Horn" *CARPENTRY* /1/ |-2| [effort:1] [phys:hands] [noquality] [patchwise:15]
+{Wooden Stake} [remove] [patchwise]]
 {Axe} <Carving axe>
 {Knife} <Small knife>
 [TILEGFX:it-yarn]
@@ -126,12 +126,12 @@
 
 // TODO: new graphic
 .Heckling Comb. "Hunting Horn" *CARPENTRY* |+1| /90/ [effort:1] [phys:hands]
-{Wooden Stake} [remove]
+{Antler} [remove]
 {Axe} <Carving axe>
 {Knife} <Small knife>
-[TILEGFX:it-firewood]
+[TILEGFX:vl-bcomb]
 [TYPE:tool]
-[MATERIAL:wood]
+[MATERIAL:antler]
 [PRICE:2]
 [WEIGHT:0.5]
 
@@ -355,139 +355,3 @@
 [ARMOUR_COVERAGE:shoulder upper_arm thorax abdomen hip groin thigh]
 
 [SUBMENU_END:Tailoring]
-
-[SUBMENU_START:Patchwork Clothes]
-.Linen Patchwork apron. "Linen apron" /2h/ *HIDEWORKING* |0| [effort:0] [phys:arms,hands,one-armed]
-{Linen *} #2# [remove] 'Linen scraps'
-{Homespun Yarn} #0.5# [remove]
-{Knife} <Small knife>
-
-.Linen Patchwork cowl. "Linen cowl" /1h/ *HIDEWORKING* |-1| [effort:0] [phys:arms,hands,one-armed]
-{Linen *} #1# [remove] 'Linen scraps'
-{Homespun Yarn} #0.25# [remove]
-{Knife} <Small knife>
-
-.Linen Patchwork dress. "Linen dress" /4h/ *HIDEWORKING* |1| [effort:0] [phys:arms,hands,one-armed]
-{Linen *} #4# [remove] 'Linen scraps'
-{Homespun Yarn} #1# [remove]
-{Knife} <Small knife>
-
-.Linen Patchwork Footrags. "Linen footrags" /15/ *HIDEWORKING* |-2| [effort:0] [phys:arms,hands,one-armed]
-{Linen *} #0.25# [remove] 'Linen scraps'
-{Knife} <Small knife>
-
-.Linen Patchwork shirt. "Linen shirt" /2.5h/ *HIDEWORKING* |1| [effort:0] [phys:arms,hands,one-armed]
-{Linen *} #2.5# [remove] 'Linen scraps'
-{Homespun Yarn} #0.5# [remove]
-{Knife} <Small knife>
-
-.Linen Patchwork tunic. "Linen tunic" /2.8h/ *HIDEWORKING* |1| [effort:0] [phys:arms,hands,one-armed]
-{Linen *} #2.8# [remove] 'Linen scraps'
-{Homespun Yarn} #0.75# [remove]
-{Knife} <Small knife>
-
-.Linen Patchwork undershirt. "Linen undershirt" /3h/ *HIDEWORKING* |1| [effort:0] [phys:arms,hands,one-armed]
-{Linen *} #3# [remove] 'Linen scraps'
-{Homespun Yarn} #0.75# [remove]
-{Knife} <Small knife>
-
-.Linen Patchwork Veil. "Linen veil" /30/ *HIDEWORKING* |-2| [effort:0] [phys:arms,hands,one-armed]
-{Linen *} #0.4# [remove] 'Linen scraps'
-{Knife} <Small knife>
-
-.Nettle Patchwork apron. "Nettle apron" /2h/ *HIDEWORKING* |0| [effort:0] [phys:arms,hands,one-armed]
-{Nettle *} #2# [remove] 'Nettle scraps'
-{Homespun Yarn} #0.5# [remove]
-{Knife} <Small knife>
-
-.Nettle Patchwork cloak. "Nettle cloak" /6h/ *HIDEWORKING* |2| [effort:0] [phys:arms,hands,one-armed]
-{Nettle *} #6# [remove] 'Nettle scraps'
-{Homespun Yarn} #1.5# [remove]
-{Knife} <Small knife>
-
-.Nettle Patchwork cowl. "Nettle cowl" /1h/ *HIDEWORKING* |-1| [effort:0] [phys:arms,hands,one-armed]
-{Nettle *} #1# [remove] 'Nettle scraps'
-{Homespun Yarn} #0.25# [remove]
-{Knife} <Small knife>
-
-.Nettle Patchwork shirt. "Nettle shirt" /2.5h/ *HIDEWORKING* |1| [effort:0] [phys:arms,hands,one-armed]
-{Nettle *} #2.5# [remove] 'Nettle scraps'
-{Homespun Yarn} #0.5# [remove]
-{Knife} <Small knife>
-
-.Nettle Patchwork tunic. "Nettle tunic" /2.8h/ *HIDEWORKING* |1| [effort:0] [phys:arms,hands,one-armed]
-{Nettle *} #2.8# [remove] 'Nettle scraps'
-{Homespun Yarn} #0.75# [remove]
-{Knife} <Small knife>
-
-.Woollen patchwork apron. "Woollen apron" /3.5h/ *HIDEWORKING* |1| [effort:0] [phys:arms,hands,one-armed]
-{Woollen *} #3.5 [remove] 'Wool scraps'
-{Homespun Yarn} #1# [remove]
-{Knife} <Small knife>
-
-.Woollen patchwork cloak. "Woollen Cloak" /6.5h/ *HIDEWORKING* |2| [effort:0] [phys:arms,hands,one-armed]
-{Woollen *} #6.5 [remove] 'Wool scraps'
-{Homespun Yarn} #1.5# [remove]
-{Knife} <Small knife>
-
-.Woollen patchwork cowl. "Woollen Cowl" /1h/ *HIDEWORKING* |-1| [effort:0] [phys:arms,hands,one-armed]
-{Woollen *} #1# [remove] 'Wool scraps'
-{Homespun Yarn} #0.25# [remove]
-{Knife} <Small knife>
-
-.Woollen patchwork dress. "Woollen Dress" /6h/ *HIDEWORKING* |2| [effort:0] [phys:arms,hands,one-armed]
-{Woollen *} #6# [remove] 'Wool scraps'
-{Homespun Yarn} #1.5# [remove]
-{Knife} <Small knife>
-
-.Woollen patchwork footrags. "Woollen Footrags" /15/ *HIDEWORKING* |-2| [effort:0] [phys:arms,hands,one-armed]
-{Woollen *} #0.25# [remove] 'Wool scraps'
-{Knife} <Small knife>
-
-.Woollen patchwork leggings. "Woollen Leggings" /3.5h/ *HIDEWORKING* |1| [effort:0] [phys:arms,hands,one-armed]
-{Woollen *} #3.5# [remove] 'Wool scraps'
-{Homespun Yarn} #1# [remove]
-{Knife} <Small knife>
-
-.Woollen patchwork mittens. "Woollen Mittens" /15/ *HIDEWORKING* |-2| [effort:0] [phys:arms,hands,one-armed]
-{Woollen *} #0.25# [remove] 'Wool scraps'
-{Knife} <Small knife>
-
-.Woollen patchwork overcoat. "Woollen Overcoat" /6h/ *HIDEWORKING* |2| [effort:0] [phys:arms,hands,one-armed]
-{Woollen *} #6# [remove] 'Wool scraps'
-{Homespun Yarn} #1.5# [remove]
-{Knife} <Small knife>
-
-.Woollen patchwork shirt. "Woollen Shirt" /4h/ *HIDEWORKING* |1| [effort:0] [phys:arms,hands,one-armed]
-{Woollen *} #4# [remove] 'Wool scraps'
-{Homespun Yarn} #1# [remove]
-{Knife} <Small knife>
-
-.Woollen patchwork socks. "Woollen Socks" /15/ *HIDEWORKING* |-2| [effort:0] [phys:arms,hands,one-armed]
-{Woollen *} #0.25# [remove] 'Wool scraps'
-{Knife} <Small knife>
-
-.Woollen patchwork trousers. "Woollen Trousers" /5.5h/ *HIDEWORKING* |2| [effort:0] [phys:arms,hands,one-armed]
-{Woollen *} #5.5# [remove] 'Wool scraps'
-{Homespun Yarn} #2# [remove]
-{Knife} <Small knife>
-
-.Woollen patchwork tunic. "Woollen Tunic" /5h/ *HIDEWORKING* |1| [effort:0] [phys:arms,hands,one-armed]
-{Woollen *} #5# [remove] 'Wool scraps'
-{Homespun Yarn} #1.5# [remove]
-{Knife} <Small knife>
-
-.Woollen patchwork undergarment. "Woollen Undergarment" /7h/ *HIDEWORKING* |2| [effort:0] [phys:arms,hands,one-armed]
-{Woollen *} #7# [remove] 'Wool scraps'
-{Homespun Yarn} #2# [remove]
-{Knife} <Small knife>
-
-.Woollen patchwork undershirt. "Woollen Undershirt" /3h/ *HIDEWORKING* |1| [effort:0] [phys:arms,hands,one-armed]
-{Woollen *} #5# [remove] 'Wool scraps'
-{Homespun Yarn} #2# [remove]
-{Knife} <Small knife>
-
-.Woollen patchwork veil. "Woollen Veil" /15/ *HIDEWORKING* |-2| [effort:0] [phys:arms,hands,one-armed]
-{Woollen *} #4# [remove] 'Wool scraps'
-{Knife} <Small knife>
-[SUBMENU_END:Patchwork Clothes]
