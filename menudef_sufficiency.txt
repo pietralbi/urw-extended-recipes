@@ -28,6 +28,5 @@
 .Armor Repair. -A- *MAKE*
 .Weaving. -E- *MAKE*
 .Tailoring. -A- *MAKE*
-.Patchwork Clothes. -P- *MAKE*
 .Crafting tools. -H- *MAKE*
 .Drying. -Y- *COOKERY*
