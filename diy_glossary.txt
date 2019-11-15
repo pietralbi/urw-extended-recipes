@@ -19,29 +19,29 @@
 {Cutting weapon} <Axe> 
 {Fire} '+(for hardening the head)'
 
-.Bone Club. "Club" [effort:2] [phys:arms, one-armed] *CARPENTRY* /10/
+.Bone club. "Club" [effort:2] [phys:arms, one-armed] *CARPENTRY* /10/
 {Bone} [remove] [noquality]
-{Cutting weapon} <Axe>
+{Cutting weapon} <Knife>
 [MATERIAL:bone]
 [TILEGFX:wp-boneclub]
 [WEIGHT:2]
-[PRICE:0]
+[PRICE:2]
 [POINT_ATTACK:0]
 [EDGE_ATTACK:0]
-[BLUNT_ATTACK:4]
+[BLUNT_ATTACK:2]
 [1H_PENALTY:0]
-[AD_CLASS:2/1]
+[AD_CLASS:2/2]
 
-.Bone Spear. "Javelin" [effort:1] [phys:hands,one-armed] *CARPENTRY* /30/
+.Bone javelin. "Javelin" [effort:1] [phys:hands,one-armed] *CARPENTRY* /30/
 {Staff} [remove]
 {Bone} [remove] [noquality]
-{Cord} =3= [remove]
-{Cutting weapon} <Axe>
+{Cord} =5= [remove]
+{Cutting weapon} <Knife>
 [TILEGFX:wp-bonejav]
-[WEIGHT:2]
+[WEIGHT:3]
 [PRICE:2]
 [POINT_ATTACK:7]
-[EDGE_ATTACK:0]
+[EDGE_ATTACK:-]
 [BLUNT_ATTACK:2]
 [1H_PENALTY:0]
 [AD_CLASS:3/1]
@@ -58,9 +58,9 @@
 {Cord} =5= [remove]
 
 .Northern staff-bow. "Northern spear" [effort:2] [phys:stance,arms] *CARPENTRY*  /7h/ |2|
-{Board} [remove] 
+{Slender trunk} [remove] 
 {Staff} [remove]
-{Tying equipment} [remove]
+{Cord} =5= [remove]
 {Leather}	#1#	 [remove]
 {Axe} <Carving axe>
 {Knife} <Small knife>
@@ -71,7 +71,7 @@
 [AD_CLASS:0/0]
 [WEIGHT:4]
 [SKILL:bow]
-[PRICE:80]
+[PRICE:24]
 [TILEGFX:bc-staffbow]
 
 .Arrow. [effort:1] [phys:hands,one-armed]  	*CARPENTRY*        /30/    [patch:5]
@@ -91,21 +91,26 @@
 {Branch}   [remove] [patchwise] [noquality]
 {Knife}
 {Feather} (3) [remove] [patchwise] [noquality]
-{Tying equipment} [remove] [patchwise] 
+{Cord} =1=    [remove] [patchwise] 
 {Bone} #0.2# [remove] [patchwise] [noquality]
-[MATERIAL:bone]
 [NAME:Bone arrow]
+[EDGE_ATTACK:5]
+[POINT_ATTACK:2]
+[WEIGHT:0.1]
+[PRICE:12]
+[MATERIAL:bone]
 
 .Antler-tip arrow. "Blunt arrow" [effort:1] [phys:hands,one-armed] *CARPENTRY* /30/ [patch:5]
 {Branch}   [remove] [patchwise] [noquality]
 {Knife}
 {Feather} (3) [remove] [patchwise] [noquality]
-{Tying equipment} [remove] [patchwise] 
+{Cord} =1=    [remove] [patchwise] 
 {Antler} #0.2# [remove] [noquality] [patchwise]
-[MATERIAL:antler]
 [NAME:Antler-tip arrow]
 [BLUNT_ATTACK:8]
-[PRICE:8]
+[WEIGHT:0.2]
+[PRICE:12]
+[MATERIAL:antler]
 
 [SUBMENU_END:weapon]
 
@@ -128,20 +133,27 @@
 {Axe} <Carving axe>		
 {Knife}
 
-.Wooden cup.  [effort:2] [phys:arms,one-armed]  *CARPENTRY*   		/60/ 			%-20%  	|-1|	
-.Wooden bowl. [effort:2] [phys:arms,one-armed]  *CARPENTRY*   		/120/ 			%-20%  			
+.Wooden cup.  [effort:2] [phys:arms,one-armed]  *CARPENTRY*   		/60/ 			%20%  	|-1|	
+.Wooden bowl. [effort:2] [phys:arms,one-armed]  *CARPENTRY*   		/120/ 			%20%  			
 {Block of wood} [remove] [noquality]
 {Axe} 		<Carving axe>	
 {Knife}	
 
-.Bandage. [effort:1] [phys:hands,one-armed] *COMMON* [patch:10]
+.Bandage. [effort:1] [phys:hands,one-armed] *COMMON*   [noquality]   [patch:10]
 {Cloth} #1# [remove]          [patchwise]
 {Cutting weapon or by hand}
+
+.Birch-bark bandage. "Bandage"  *TIMBERCRAFT* [effort:1] [phys:hands,one-armed] /30/ |-2| %-80%
+{Knife} <Small knife>
+{Birch-bark strip}   =38=   [remove]
+[WEIGHT:0.5]
+[NAME:Birch-bark bandage]
+[Material:birch-bark]
 
 .Torch.	[effort:0] [phys:hands,one-armed] [noquality]	*COMMON*	/30/  %50% |0|  [patch:5] 
 {Branch} (10) 		[remove] [patchwise]
 
-.Wooden shovel.	[effort:2] [phys:arms,stance] *CARPENTRY*   		/240/ 			%-30%  
+.Wooden shovel.	[effort:2] [phys:arms,stance] *CARPENTRY*   		/240/ 			%10%  
 {Block of wood} [remove] [noquality]
 {Axe} <Handaxe> 'An axe for rough cutting'
 {Axe} <Carving axe> 'An axe for finishing the shape'
@@ -180,14 +192,22 @@
 {Knife} <Small knife>                    
 {Water} #1# [remove] [patchwise]	
 
+.Spruce withe.  (2) [effort:1] [phys:arms,one-armed]  *TIMBERCRAFT*       /3/	%50% |-2|
+{Spruce sapling}  [remove] (10) [ask_num] [noquality]
+{Knife} <Small knife>
+
+.Birch withe.    [effort:1] [phys:arms,one-armed]     *CARPENTRY*        /5/	%25% |-2|
+{Birch sapling}  [remove] (10) [ask_num] [noquality]
+{Knife} <Small knife>                    
+
 [SUBMENU_END:tying equipment]
 
 
 [SUBMENU_START:lumber]
 
-.Wooden stake. 	[effort:1] [phys:arms,one-armed]  *TIMBERCRAFT* 	(8) 	/30/			%00%	|-2|	[patch]
-.Staff.		[effort:1] [phys:arms,one-armed]  *TIMBERCRAFT*		/15/			%20%	|-2|	[patch]
-{Cutting weapon}<Axe>	
+.Wooden stake. 	[effort:1] [phys:arms,one-armed]  *TIMBERCRAFT* 	(8) 	/30/			%40%	|-2|	[patch]
+.Staff.		[effort:1] [phys:arms,one-armed]  *TIMBERCRAFT*		/15/			%60%	|-2|	[patch]
+{Cutting weapon} <Axe>	
 {Slender trunk}	[remove]							[patchwise] [noquality]
 
 [SUBMENU_END:lumber]
