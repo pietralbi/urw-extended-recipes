@@ -1,8 +1,9 @@
 # Caethan's UnReal World self-sufficiency mod
+-- Modified by pietralbi
 
 This is a set of modifications for the freeware roguelike game [UnReal World](http://www.unrealworld.fi/) developed by Sami Maaranen and Erkka Lehmus.
 
-Last updated with UnReal World 3.51.
+Last updated with UnReal World 3.60.
 
 This mod allows you to live more self-sufficiently, crafting most needed tools and items with some effort on your own without trading.
 Not everything is available --- complex armor and weapons will still have to be found elsewhere, but simple birchbark crafting, smithing, and weaving, along with some other small crafts and cooking, can now be done on your own.
