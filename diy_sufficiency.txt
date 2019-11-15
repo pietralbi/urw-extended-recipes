@@ -22,7 +22,7 @@
 
 .Wooden tub. [effort:2] [phys:arms,hands] *CARPENTRY* /3h/
 {Rope} =6= [remove] '+for hoops'
-{Pine tar} (2) [remove] [noquality] '+for waterproofing'
+{Pine resin} (2) [remove] [noquality] '+for waterproofing'
 {Board} (4) [remove]
 {Fire} [ground]
 {Axe} <Carving axe>
@@ -30,7 +30,7 @@
 
 .Small barrel. "Bag" [effort:3] [phys:arms,hands] *CARPENTRY* /4h/
 {Rope} =12= [remove] '+for hoops'
-{Pine tar} (4) [remove] [noquality] '+for waterproofing'
+{Pine resin} (4) [remove] [noquality] '+for waterproofing'
 {Board} (8) [remove]
 {Fire} [ground]
 {Axe} <Carving axe>
@@ -44,7 +44,7 @@
 
 .Large barrel. "Bag" [effort:3] [phys:arms,hands] *CARPENTRY* /6h/
 {Rope} =18= [remove] '+for hoops'
-{Pine tar} (10) [remove] [noquality] '+for waterproofing'
+{Pine resin} (10) [remove] [noquality] '+for waterproofing'
 {Board} (12) [remove]
 {Fire} [ground]
 {Axe} <Carving axe>
@@ -60,30 +60,13 @@
 
 [SUBMENU_START:lumber]
 
-.Gather pine tar. [effort:1] [phys:hands,one-armed] (5) "Hunting Horn" [noquality] *COMMON*  /30/
+.Gather pine resin. [effort:1] [phys:hands,one-armed] (5) "Hunting Horn" [noquality] *COMMON*  /30/
 {[NEARBY_TILE:*Pine]}  'A nearby pine tree'
 {Cutting weapon} <Small knife>
-[NAME:Pine tar]
+[NAME:Pine resin]
 [TILEGFX:fw-resin]
 [MATERIAL:wood]
 [TYPE:timber]
 [WEIGHT:.1]
 
 [SUBMENU_END:lumber]
-
-[SUBMENU_START:transport]
-
-// We could make this more complicated by making you peel off a big piece instead of in small
-// 1/2 lb increments, but I like the extra work this takes.
-.Birch-bark canoe. "Punt" *CARPENTRY* [effort:3] [phys:arms,stance] /8h/ %-10% |2|
-{Birch-bark strip} =120= [remove] [ground]
-{Rope} =16= [remove] [ground]
-{Board} [remove] [ground]
-//{Water} #9999# [remove] 'Must be near water'
-{[NEARBY_TILE:Water]} 'Must be near water'
-{Fire} [ground]
-{Axe} <Carving axe>
-{Knife} <Small knife>
-[MATERIAL:birch-bark]
-
-[SUBMENU_END:transport]
