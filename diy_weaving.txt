@@ -73,6 +73,8 @@
 [PRICE:20]
 [WEIGHT:5]
 
+// Shredding existing clothes
+
 .Shred cloth for yarn. "Hunting Horn" *HIDEWORKING* /1h/ [patchwise:5] [effort:1] [phys:hands,one-armed]
 {Cloth} #0.75# [remove] [patchwise]
 {Spool} [remove] [noquality] [patchwise]
