@@ -34,7 +34,7 @@
 
 .Bone javelin. "Javelin" [effort:1] [phys:hands,one-armed] *CARPENTRY* /30/
 {Staff} [remove]
-{Bone} [remove] [noquality]
+{Bone} #0.05# [remove] [noquality]
 {Cord} =5= [remove]
 {Cutting weapon} <Knife>
 [TILEGFX:wp-bonejav]
@@ -92,7 +92,7 @@
 {Knife}
 {Feather} (3) [remove] [patchwise] [noquality]
 {Cord} =1=    [remove] [patchwise] 
-{Bone} #0.2# [remove] [patchwise] [noquality]
+{Bone} #0.05# [remove] [patchwise] [noquality] 
 [NAME:Bone arrow]
 [EDGE_ATTACK:5]
 [POINT_ATTACK:2]
