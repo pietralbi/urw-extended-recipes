@@ -54,7 +54,7 @@
 
 .Spin yarn. "Hunting Horn" *HIDEWORKING* /5h/ [effort:1] [phys:hands,one-armed] |2|
 {Raw plant fibre} #2.5# [remove] [patchwise]
-{Spool} [remove] [noquality]] [patchwise]
+{Spool} [remove] [noquality] [patchwise]
 {Spindle and distaff}
 [NAME:Homespun yarn]
 [TILEGFX:it-yarn]
