@@ -60,13 +60,24 @@
 
 [SUBMENU_START:lumber]
 
-.Gather pine resin. [effort:1] [phys:hands,one-armed] (5) "Hunting Horn" [noquality] *COMMON*  /30/
+.Gather pine resin. "Hunting Horn" *COMMON* [noquality] [effort:1] [phys:hands,one-armed]  /30/
 {[NEARBY_TILE:*Pine]}  'A nearby pine tree'
 {Cutting weapon} <Small knife>
 [NAME:Pine resin]
 [TILEGFX:fw-resin]
 [MATERIAL:wood]
 [TYPE:timber]
-[WEIGHT:.1]
+[WEIGHT:0.1]
+[PRICE:0.05]
 
 [SUBMENU_END:lumber]
+
+[SUBMENU_START:tying equipment]
+
+.Untie loop snare.	"Cord"	*COMMON*	/5/ 	[effort:1] [phys:hands]
+{Loop snare}	(1)			[remove] 
+[LENGTH:3]
+[WEIGHT:0.1]
+[NAME:Cord]
+
+[SUBMENU_END:tying equipment]

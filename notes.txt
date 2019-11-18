@@ -1,0 +1,20 @@
+Birch Bark:
+1 lb = 75 ft
+
+Withe:
+1 lb = 8 ft
+
+Cord:
+1 lb = 30 ft
+
+
+### Prices
+
+38 wooden bowls + 5 squirrel hides = woodsman axe
+
+43 wooden bowls = 1 broad knife
+1 wooden bowl : 0.4 squirrel hides
+1 broad knife : 17 squirrel hides
+
+284 torches = 1 broad knife
+1 torch : 0.06 squirrel hide 
