@@ -18,3 +18,12 @@ Cord:
 
 284 torches = 1 broad knife
 1 torch : 0.06 squirrel hide 
+
+
+### Fur crafting
+1.2 -> 1  // Cap
+3  -> 2.8  // Footwear
+7.2 -> 7  // Shirt
+7.6 -> 7.4  // Leggins
+11.7  -> 11.5 // Cloack
+14  -> 13.5  // Overcoat
