@@ -143,7 +143,7 @@
 {Cloth} #1# [remove]          [patchwise]
 {Cutting weapon or by hand}
 
-.Birch-bark bandage. "Bandage"  *TIMBERCRAFT* [effort:1] [phys:hands,one-armed] /30/ |-2| %-80%
+.Birch-bark bandage. "Bandage"  *TIMBERCRAFT* [effort:1] [phys:hands,one-armed] /30/ |-2| [noquality] 
 {Knife} <Small knife>
 {Birch-bark strip}   =38=   [remove]
 [WEIGHT:0.5]

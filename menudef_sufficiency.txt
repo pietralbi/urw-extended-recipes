@@ -26,6 +26,6 @@
 .Smith finished goods. -G- *MAKE*
 .Armor Repair. -A- *MAKE*
 .Weaving. -E- *MAKE*
-.Tailoring. -A- *MAKE*
+.Linen and nettle clothes. -A- *MAKE*
 .Crafting tools. -H- *MAKE*
 .Drying. -Y- *COOKERY*

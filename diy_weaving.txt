@@ -21,8 +21,8 @@
 [TILEGFX:it-distaff]
 [TYPE:tool]
 [MATERIAL:wood]
-[PRICE:0.5]
-[WEIGHT:1]
+[PRICE:0.6]
+[WEIGHT:1.5]
 
 .Loom. "Hunting Horn" *CARPENTRY* /5h/ |2|	[effort:2] [phys:arms,stance] [assist:3]
 {Board} (5) [remove]
@@ -90,20 +90,20 @@
 
 // Added "Spun" to avoid being used for clothes before manifactured into cloth
 .Spin yarn. 		"Hunting Horn" 	*HIDEWORKING*	/30/  [patch:10] [effort:1]  [phys:hands,one-armed] [assist:2]
-{*fibres from *} 		#0.5#	[remove] [patchwise] [name:Spun %s yarn] [naming:last word] 'Fabric fibres'
+{*fibres from *} 		#1.0#	[remove] [patchwise] [name:Spun %s yarn] [naming:last word] 'Fabric fibres'
 {Staff} '+to hold the fibres'
 {Cord} =3= 
 {Spindle} '+to spin the yarn'
 [TILEGFX:it-yarn]
 [TYPE:tool]
 [MATERIAL:cloth]
-[PRICE:0.3]
-[WEIGHT:0.6]
+[PRICE:0.6]
+[WEIGHT:1.1]
 
 // Weave cloths 
 
 .Weave nettle cloth. 	"Bandage" 	/6h/ 	*HIDEWORKING* |2| [effort:2] [phys:arms,stance] [assist:1]
-{Spun nettle yarn} 	(10) 	[remove]
+{Spun nettle yarn} 	(5) 	[remove]
 {Loom}			[ground]	
 [NAME:Nettle cloth]
 [WEIGHT:5]
@@ -112,7 +112,7 @@
 [TILEGFX:it-cloth]
 
 .Weave linen cloth. 	"Bandage" 	/6h/ 	*HIDEWORKING* |2| [effort:2] [phys:arms,stance] [assist:1]
-{Spun flax yarn} 	(10) 	[remove]
+{Spun flax yarn} 	(5) 	[remove]
 {Loom}			[ground]	
 [NAME:Linen cloth]
 [WEIGHT:5]
@@ -121,7 +121,7 @@
 [TILEGFX:it-cloth]
 
 .Weave woollen cloth. 		"Bandage" 	/6h/ 	*HIDEWORKING* |2| [effort:2] [phys:arms,stance] [assist:1]
-{Spun wool yarn} 	(10)  [remove]
+{Spun wool yarn} 	(5)  [remove]
 {Loom}			[ground]
 [NAME:Woollen cloth]
 [WEIGHT:5]
@@ -172,23 +172,23 @@
 .Braid fibres into cord. "Cord" *CARPENTRY* [patch:5] /90/ [effort:1] [phys:hands] [assist:1]
 {*fibres from*} #0.5#	[remove] [patchwise] 'Fabric fibres'   
 {Knife} <Small knife>
-[NAME:Homespun cord]
+[NAME:Braided cord]
 [MATERIAL:cloth]
 [WEIGHT:0.5]
 [LENGTH:15]
 
-.Twist cord from yarn. "Cord" *CARPENTRY* [patch:5] %50% /5/ [effort:0] |-2| [phys:hands]
+.Twist cord from yarn. "Cord" *CARPENTRY* [patch:5] %50% /15/ [effort:0] |-2| [phys:hands]
 {Spun * yarn} [remove] [patchwise]
 {Knife} <Small knife>
-[NAME:Homespun cord]
+[NAME:Twisted cord]
 [MATERIAL:cloth]
-[WEIGHT:0.5]
-[LENGTH:15]
+[WEIGHT:1]
+[LENGTH:30]
 
 .Braid rope from yarn. "Rope" *CARPENTRY* /1h/ [effort:1] [phys:hands] [assist:1]
-{Spun * yarn} #1# [remove] [patchwise]
+{Spun * yarn} [remove] [patchwise]
 {Knife} <Small knife>
-[Name:Homespun rope]
+[Name:Braided rope]
 [MATERIAL:cloth]
 [WEIGHT:1]
 [LENGTH:15]
@@ -198,7 +198,7 @@
 
 [SUBMENU_START:utility article]
 
-.Bag. *HIDEWORKING* [noquality] /1h/ [effort:1] [phys:hands]
+.Bag. *COMMON* [noquality] /1h/ [effort:1] [phys:hands]
 {*cloth} #1.0# [remove]
 {Knife} <Small Knife>
 
@@ -244,7 +244,7 @@
 [ARMOUR_COVERAGE:hig groin thigh knee calf]
 [TILEGFX:ar-nesk]  
 
-.Nettle breast wrap. "Nettle cowl" *COMMON* /60/	[effort:1] [phys:arms,hands] [assist:1]
+.Nettle breast band. "Nettle cowl" *COMMON* /60/	[effort:1] [phys:arms,hands] [assist:1]
 {Nettle *}  'Nettle cloth'		#1.2# 	[remove]
 {Knife} <Small knife>
 [PRICE:0.4]
@@ -319,7 +319,7 @@
 [ARMOUR_COVERAGE:hand]
 [TILEGFX:ar-mittens.png] 
 
-.Linen breast wrap. "Linen cowl" *COMMON* /60/	[effort:1] [phys:arms,hands] [assist:1]
+.Linen breast band. "Linen cowl" *COMMON* /60/	[effort:1] [phys:arms,hands] [assist:1]
 {Linen *}  'Linen cloth'		#1.2# 	[remove]
 {Knife} <Small knife>
 [PRICE:0.4]
