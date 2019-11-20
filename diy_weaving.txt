@@ -88,6 +88,40 @@
 [PRICE:0.02]
 [WEIGHT:0.1]
 
+// Wool scouring and carding
+
+.Shear a sheep. (75)	"Hunting horn"	[phys:stance,arms,hands] /45/ *HIDEWORKING* [noquality] [assist:1]
+{[NEARBY_TILE:ground]} 			'During midsummer' 
+{[NEARBY_TILE:ground]} 			'shear each sheep once'
+{Knife}	<Broad knife>				'+for shearing'
+[NAME:Greasy wool]
+[TYPE:skin]
+[PRICE:0.01]
+[WEIGHT:0.16]
+[TILEGFX:it-darkfib]
+
+.Scour greasy wool. "Hunting horn"	[phys:stance,arms,hands] /6/ \7d\ *HIDEWORKING* [patch:20] [assist:1]
+{Greasy wool}		[remove] [patchwise]
+{Water} #1.5# [remove] [patchwise]
+{Container} [ground]
+{Fire} '+to dry the wool'
+{[NEARBY_TILE:Fence]} 'A fence to dry the wool on'
+[NAME:Wool]
+[TYPE:skin]
+[PRICE:0.01]
+[WEIGHT:0.12]
+[TILEGFX:it-darkfib]
+
+.Card wool. "Hunting horn"	[phys:stance,arms,hands] /4/ *HIDEWORKING* [patch:20] [assist:1]
+{Wool}		[remove] [patchwise]
+{*comb}		'Comb for carding'
+[NAME:Bunch of fibres from wool]
+[TILEGFX:it-fibre]
+[TYPE:timber]
+[MATERIAL:cloth]
+[PRICE:0.02]
+[WEIGHT:0.1]
+
 // Added "Spun" to avoid being used for clothes before manifactured into cloth
 .Spin yarn. 		"Hunting Horn" 	*HIDEWORKING*	/30/  [patch:10] [effort:1]  [phys:hands,one-armed] [assist:2]
 {*fibres from *} 		#1.0#	[remove] [patchwise] [name:Spun %s yarn] [naming:last word] 'Fabric fibres'
@@ -133,7 +167,7 @@
 
 .Shred wool fabric into fibres. "Hunting Horn" *CARPENTRY* /5/ [patchwise:10] [effort:1] |-2| [phys:hands,one-armed] [assist:1]
 {Woollen *} #0.1# [remove] [patchwise] 'woollen cloth'
-{*comb} 'Comb to separate the fibers'
+{*comb} 'Comb to separate the fibres'
 {Knife} <Small knife>
 [NAME:Bunch of fibres from wool]
 [TILEGFX:it-fibre]
@@ -144,7 +178,7 @@
 
 .Shred linen into fibres. "Hunting Horn" *CARPENTRY* /5/ [patchwise:10] [effort:1] |-2| [phys:hands,one-armed] [assist:1]
 {Linen *} #0.1# [remove] [patchwise] 'linen cloth'
-{*comb} 'Comb to separate the fibers'
+{*comb} 'Comb to separate the fibres'
 {Knife} <Small knife>
 [NAME:Bunch of fibres from flax]
 [TILEGFX:it-fibre]
@@ -155,7 +189,7 @@
 
 .Shred nettle fabric into fibres. "Hunting Horn" *CARPENTRY* /5/ [patchwise:10] [effort:1] |-2| [phys:hands,one-armed] [assist:1]
 {Nettle *} #0.1# [remove] [patchwise] 'nettle cloth'
-{*comb} 'Comb to separate the fibers'
+{*comb} 'Comb to separate the fibres'
 {Knife} <Small knife>
 [NAME:Bunch of fibres from nettle]
 [TILEGFX:it-fibre]
@@ -308,6 +342,17 @@
 {Linen *}  'Linen cloth'		#0.35# 	[remove]
 {Knife} <Small knife>
 
+.Linen skirt. "Linen shirt" *COMMON* /150/	[effort:1] [phys:arms,hands] [assist:1]
+{Linen *}  'Linen cloth'		#2.7# 	[remove]
+{Knife} <Small knife>
+[PRICE:1.7]
+[TYPE:armour]
+[WEIGHT:2.5] 
+[MATERIAL:cloth]
+[ARMOUR_MATERIAL:cloth]
+[ARMOUR_COVERAGE:hig groin thigh knee calf]
+[TILEGFX:ar-nesk]  
+
 .Linen handwraps.  "Woollen Mittens"	 *COMMON*  /30/ [effort:1] [phys:arms,hands] [assist:1]
 {Linen *}  'Linen Cloth'		#.25# 	[remove]
 {Knife} <Small knife> 
@@ -341,21 +386,70 @@
 [ARMOUR_COVERAGE:hip groin]
 [TILEGFX:ar-loin]
 
-.Linen skirt. "Linen shirt" *COMMON* /150/	[effort:1] [phys:arms,hands] [assist:1]
-{Linen *}  'Linen cloth'		#2.7# 	[remove]
-{Knife} <Small knife>
-[PRICE:1.7]
-[TYPE:armour]
-[WEIGHT:2.5] 
-[MATERIAL:cloth]
-[ARMOUR_MATERIAL:cloth]
-[ARMOUR_COVERAGE:hig groin thigh knee calf]
-[TILEGFX:ar-nesk]  
-
 [SUBMENU_END:Linen and nettle clothes]
 
 
-[SUBMENU_START:Tailoring]
+[SUBMENU_START:Woollen and quilted clothes]
+
+.Woollen apron.		/5h/	[effort:1] [phys:hands]
+{Woollen *}  'Woollen cloth'  		#3.7# 	[remove]
+{Knife} <Small knife>
+
+.Woollen cloak.		/9h/	[effort:1] [phys:hands]
+{Woollen *}  'Woollen cloth'		#5.7# 	[remove]
+{Knife} <Small knife>
+
+.Woollen cowl.		/2h/	[effort:1] [phys:hands]
+{Woollen *}  'Woollen cloth'  		#1.2# 	[remove]
+{Knife} <Small knife>
+
+.Woollen dress.		/6h/	[effort:1] [phys:hands]
+{Woollen *}  'Woollen cloth'  		#6.2# 	[remove]
+{Knife} <Small knife>
+
+.Woollen footrags.	/90/	[effort:1] [phys:hands,one-armed]
+{Woollen *}  'Woollen cloth'  		#0.25# 	[remove]
+{Knife} <Small knife>
+
+.Woollen leggings.	/5h/	[effort:1] [phys:hands]
+{Woollen *}  'Woollen cloth'   		#3.7# 	[remove]
+{Knife} <Small knife>
+
+.Woollen mittens.	/2h/	[effort:1] [phys:hands]
+{Woollen *}  'Woollen cloth'   		#0.25# 	[remove]
+{Knife} <Small knife>
+
+.Woollen overcoat.	/9h/	[effort:1] [phys:hands]
+{Woollen *}  'Woollen cloth'  		#6.5# 	[remove]
+{Knife} <Small knife>
+
+.Woollen shirt.		/5h/	[effort:1] [phys:hands]
+{Woollen *}  'Woollen cloth'  		#4.2# 	[remove]
+{Knife} <Small knife>
+
+.Woollen socks.		/2h/	[effort:1] [phys:hands]
+{Woollen *}  'Woollen cloth' 		#0.25# 	[remove]
+{Knife} <Small knife>
+
+.Woollen trousers.	/7h/	[effort:1] [phys:hands]
+{Woollen *}  'Woollen cloth'  		#5.7# 	[remove]
+{Knife} <Small knife>
+
+.Woollen tunic.		/8h/	[effort:1] [phys:hands]
+{Woollen *}  'Woollen cloth'   		#4.8# 	[remove]
+{Knife} <Small knife>
+
+.Woollen undergarment.	/6h/	[effort:1] [phys:hands]
+{Woollen *}  'Woollen cloth' 		#7.2# 	[remove]
+{Knife} <Small knife>
+
+.Woollen undershirt.	/5h/	[effort:1] [phys:hands]
+{Woollen *}  'Woollen cloth'   		#5.2# 	[remove]
+{Knife} <Small knife>
+
+.Woollen veil.			/5h/	[effort:1] [phys:hands]
+{Woollen *}  'Woollen cloth'   		#0.35# 	[remove]
+{Knife} <Small knife>
 
 // Use feathers to make very warm quilted items
 .Homespun quilted cloak. "Nettle cloak" /3h/ *HIDEWORKING* |+2| [effort:0] [phys:arms,hands,one-armed]
