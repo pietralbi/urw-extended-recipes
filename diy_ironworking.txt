@@ -373,8 +373,8 @@
 
 .Small knife. [effort:1] [phys:arms,hands] *CARPENTRY*  /15/ |+1|
 {Sharp small-knifeblade}  [remove]
-{Cord} =0.5= [remove]
-{Leather} #0.25# [remove] [optional] '+for the hilt'
+{Cord} =1= [remove]
+{Leather} #0.1# [remove] [optional] '+for the hilt'
 {Knife} <Small knife>
 
 .Knife. [effort:1] [phys:arms,hands] *CARPENTRY*  /15/ |+1|
