@@ -391,64 +391,64 @@
 
 [SUBMENU_START:Woollen clothes]
 
-.Woollen apron.		/5h/	[effort:1] [phys:hands]
+.Woollen apron.	 	*COMMON*	/210/	[effort:1] [phys:arms,hands] [assist:1]
 {Woollen *}  'Woollen cloth'  		#3.7# 	[remove]
 {Knife} <Small knife>
 
-.Woollen cloak.		/9h/	[effort:1] [phys:hands]
+.Woollen cloak.		*COMMON* 	/250/	[effort:1] [phys:arms,hands] [assist:1]
 {Woollen *}  'Woollen cloth'		#5.7# 	[remove]
 {Knife} <Small knife>
 
-.Woollen cowl.		/2h/	[effort:1] [phys:hands]
+.Woollen cowl.		*COMMON*	/60/	[effort:1] [phys:arms,hands] [assist:1]
 {Woollen *}  'Woollen cloth'  		#1.2# 	[remove]
 {Knife} <Small knife>
 
-.Woollen dress.		/6h/	[effort:1] [phys:hands]
+.Woollen dress.		*COMMON*	/280/	[effort:1] [phys:arms,hands] [assist:1]
 {Woollen *}  'Woollen cloth'  		#6.2# 	[remove]
 {Knife} <Small knife>
 
-.Woollen footrags.	/90/	[effort:1] [phys:hands,one-armed]
+.Woollen footrags.	*COMMON*	/90/	[effort:1] [phys:arms,hands] [assist:1]
 {Woollen *}  'Woollen cloth'  		#0.25# 	[remove]
 {Knife} <Small knife>
 
-.Woollen leggings.	/5h/	[effort:1] [phys:hands]
+.Woollen leggings.	*COMMON*	/210/	[effort:1] [phys:arms,hands] [assist:1]
 {Woollen *}  'Woollen cloth'   		#3.7# 	[remove]
 {Knife} <Small knife>
 
-.Woollen mittens.	/2h/	[effort:1] [phys:hands]
+.Woollen mittens.	*COMMON*	/30/	[effort:1] [phys:arms,hands] [assist:1]
 {Woollen *}  'Woollen cloth'   		#0.25# 	[remove]
 {Knife} <Small knife>
 
-.Woollen overcoat.	/9h/	[effort:1] [phys:hands]
+.Woollen overcoat.	*COMMON*	/290/	[effort:1] [phys:arms,hands] [assist:1]
 {Woollen *}  'Woollen cloth'  		#6.5# 	[remove]
 {Knife} <Small knife>
 
-.Woollen shirt.		/5h/	[effort:1] [phys:hands]
+.Woollen shirt.		*COMMON*	/230/	[effort:1] [phys:arms,hands] [assist:1]
 {Woollen *}  'Woollen cloth'  		#4.2# 	[remove]
 {Knife} <Small knife>
 
-.Woollen socks.		/2h/	[effort:1] [phys:hands]
+.Woollen socks.		*COMMON*	/30/	[effort:1] [phys:arms,hands] [assist:1]
 {Woollen *}  'Woollen cloth' 		#0.25# 	[remove]
 {Knife} <Small knife>
 
-.Woollen trousers.	/7h/	[effort:1] [phys:hands]
+.Woollen trousers.	*COMMON*	/250/	[effort:1] [phys:arms,hands] [assist:1]
 {Woollen *}  'Woollen cloth'  		#5.7# 	[remove]
 {Knife} <Small knife>
 
-.Woollen tunic.		/8h/	[effort:1] [phys:hands]
+.Woollen tunic.		*COMMON*	/240/	[effort:1] [phys:arms,hands] [assist:1]
 {Woollen *}  'Woollen cloth'   		#4.8# 	[remove]
 {Knife} <Small knife>
 
-.Woollen undergarment.	/6h/	[effort:1] [phys:hands]
+.Woollen undergarment.	*COMMON*	/310/	[effort:1] [phys:arms,hands] [assist:1]
 {Woollen *}  'Woollen cloth' 		#7.2# 	[remove]
 {Knife} <Small knife>
 
-.Woollen undershirt.	/5h/	[effort:1] [phys:hands]
+.Woollen undershirt.	*COMMON*	/240/	[effort:1] [phys:arms,hands] [assist:1]
 {Woollen *}  'Woollen cloth'   		#5.2# 	[remove]
 {Knife} <Small knife>
 
-.Woollen veil.			/5h/	[effort:1] [phys:hands]
+.Woollen veil.			*COMMON*	/45/	[effort:1] [phys:arms,hands] [assist:1]
 {Woollen *}  'Woollen cloth'   		#0.35# 	[remove]
 {Knife} <Small knife>
 
-[SUBMENU_END:Tailoring]
+[SUBMENU_END:Woollen clothes]
