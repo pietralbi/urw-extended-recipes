@@ -23,10 +23,12 @@
 // Already used for MAKE: BCLTRUW
 .Weaving. -E- *MAKE*
 .Linen and nettle clothes. -O- *MAKE*
-.Woollen and quilted clothes. -P- *MAKE* 
+.Woollen clothes. -P- *MAKE* 
 .Mining. -M- *MAKE*
 .Smithing. -S- *MAKE*
 .Smith finished goods. -G- *MAKE*
 .Armor Repair. -A- *MAKE*
 .Crafting tools. -H- *MAKE*
 .Drying. -Y- *COOKERY*
+
+-end

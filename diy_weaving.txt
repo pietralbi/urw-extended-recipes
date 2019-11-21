@@ -34,14 +34,14 @@
 [TILEGFX:it-loom]
 [TYPE:tool]
 [MATERIAL:wood]
-[PRICE:2.5]
+[PRICE:3.5]
 [WEIGHT:100]
 
 // Plant retting
 
 .Soak nettles. "Hunting Horn" [noquality] *AGRICULTURE* /1/ \14d\ [patch:20] |-2| [effort:0] [phys:arms,stance,one-armed]	
 {Nettle} #0.5# [remove] [patchwise]
-{[TILE:Water]} 'Soak thoroughly in water'
+{[NEARBY_TILE:Water]} 'Soak thoroughly in water'
 [NAME:Retted nettles]
 [TILEGFX:it-retted]
 [TYPE:plant]
@@ -52,7 +52,7 @@
 // Note that flax produces twice as much raw weight in stalks, making it a better source for raw materials
 .Soak flax. "Hunting Horn" [noquality] *AGRICULTURE* /1/ \14d\ [patch:20] |-2| [effort:0] [phys:arms,stance,one-armed]	
 {Flax} #0.5# [remove] [patchwise]
-{[TILE:Water]} 'Soak thoroughly in water'
+{[NEARBY_TILE:Water]} 'Soak thoroughly in water'
 [NAME:Retted flax]
 [TILEGFX:it-retted]
 [TYPE:plant]
@@ -62,7 +62,7 @@
 
 .Soak hemp. "Hunting Horn" [noquality] *AGRICULTURE* /1/ \14d\ [patch:20] |-2| [effort:0] [phys:arms,stance,one-armed]	
 {Hemp} #0.5# [remove] [patchwise]
-{[TILE:Water]} 'Soak thoroughly in water'
+{[NEARBY_TILE:Water]} 'Soak thoroughly in water'
 [NAME:Retted hemp]
 [TILEGFX:it-retted]
 [TYPE:plant]
@@ -70,15 +70,15 @@
 [PRICE:0]
 [WEIGHT:1]
 
-.Dry retted plants.  "Hunting Horn"	[noquality]	*AGRICULTURE*	/1/  \7d\	[patch:20]	|-2| [effort:0] [phys:arms,stance,one-armed] [assist:1]
-{Retted *} 				[remove] [patchwise] [name:Dried retted %s] [naming:last word]	'Retted plants'	
+.Dry retted plants.  "Hunting Horn"	[noquality]	*AGRICULTURE*	/1/  \7d\	|-2| [effort:0] [phys:arms,stance,one-armed] [assist:1]
+{Retted *} 		(20)	[ask_num]	[remove]  [name:Dried retted %s] [naming:last word]	'Retted plants'	
 [TILEGFX:it-retted] 
 [TYPE:plant]
 [PRICE:0]
 [WEIGHT:0.25]
 
-.Extract fibre from plant. 	"Hunting Horn"	*AGRICULTURE*	/15/ 	[patch:10] 	[effort:3] 	[phys:arms,stance] [assist:2]
-{Dried retted *} 	 		[remove] [patchwise] [ground] [name:Bunch of fibres from %s] [naming:last word] 'Dried retted plants'
+.Extract fibre from plant. 	"Hunting Horn"	*AGRICULTURE*	/15/  	[effort:3] 	[phys:arms,stance] [assist:2]
+{Dried retted *} 	 (20)	[ask_num]		[remove] [noquality] [ground] [name:Bunch of fibres from %s] [naming:last word] 'Dried retted plants'
 {Beater} '+to beat the stalks'
 {Heckling comb} 'Comb to remove the pith'
 {Knife} <Small knife>
