@@ -29,3 +29,8 @@ Cord:
 7.6 -> 7.4  // Leggins
 11.7  -> 11.5 // Cloack
 14  -> 13.5  // Overcoat
+
+
+# Leafs weight
+
+0.075 lb per leaf (M)
