@@ -90,7 +90,7 @@
 
 // Wool scouring and carding
 
-.Shear a sheep. (75)	"Hunting horn"	[phys:stance,arms,hands] /45/ *HIDEWORKING* [noquality] [assist:1]
+.Shear a sheep. (75)	"Hunting horn"	 *HIDEWORKING* /45/ [noquality] [effort:1] [phys:stance,arms,hands] [assist:1]
 {[NEARBY_TILE:ground]} 			'During midsummer' 
 {[NEARBY_TILE:ground]} 			'shear each sheep once'
 {Knife}	<Broad knife>				'+for shearing'
@@ -100,12 +100,12 @@
 [WEIGHT:0.16]
 [TILEGFX:it-darkfib]
 
-.Scour greasy wool. "Hunting horn"	[phys:stance,arms,hands] /6/ \7d\ *HIDEWORKING* [patch:20] [assist:1]
-{Greasy wool}		[remove] [patchwise]
-{Water} #1.5# [remove] [patchwise]
+.Scour greasy wool. "Hunting horn"	 *HIDEWORKING* /10/ \7d\  [effort:1] [phys:stance,arms,hands] [assist:1]
+{Greasy wool}	(20)	[ask_num]	[remove]
+{[NEARBY_TILE:Water]}  'Abundant water to wash the wool'
 {Container} [ground]
 {Fire} '+to dry the wool'
-{[NEARBY_TILE:Fence]} 'A fence to dry the wool on'
+//{[NEARBY_TILE:Fence]} 'A fence to dry the wool on'
 [NAME:Wool]
 [TYPE:skin]
 [PRICE:0.01]
