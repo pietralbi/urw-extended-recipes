@@ -1,3 +1,4 @@
+### Cords to weigths
 Birch Bark:
 1 lb = 75 ft
 
@@ -9,7 +10,6 @@ Cord:
 
 
 ### Prices
-
 38 wooden bowls + 5 squirrel hides = woodsman axe
 
 43 wooden bowls = 1 broad knife
@@ -31,6 +31,16 @@ Cord:
 14  -> 13.5  // Overcoat
 
 
-# Leafs weight
-
+### Leafs weight
 0.075 lb per leaf (M)
+
+
+### Weaving from plants:
+1 plant (M) = 0.5lb
+   >> soaking >>
+1 retted plant = 1lb
+   >> drying >>
+1 dried retted plant = 0.25lb
+   >> heckle >>
+bunch of fibers = 0.1lb
+   		
