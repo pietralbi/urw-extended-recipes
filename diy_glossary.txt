@@ -89,7 +89,7 @@
 {Cord} =1=    [remove] [patchwise] 
 {Knife}
 
-.Bone arrow. "Broadhead arrow" [effort:1] [phys:hands,one-armed] *CARPENTRY* /45/ [patch:5]
+.Bone-tipped arrow. "Broadhead arrow" [effort:1] [phys:hands,one-armed] *CARPENTRY* /45/ [patch:5]
 {Branch}   [remove] [patchwise] [noquality]
 {Knife}
 {Feather} (3) [remove] [patchwise] [noquality]
@@ -102,13 +102,14 @@
 [PRICE:1.2]
 [MATERIAL:bone]
 
-.Antler-tip arrow. "Blunt arrow" [effort:1] [phys:hands,one-armed] *CARPENTRY* /45/ [patch:5]
+.Antler-tipped arrow. "Blunt arrow" [effort:1] [phys:hands,one-armed] *CARPENTRY* /45/ [patch:5]
 {Branch}   [remove] [patchwise] [noquality]
 {Knife}
 {Feather} (3) [remove] [patchwise] [noquality]
 {Cord} =1=    [remove] [patchwise] 
 {Antler} #0.25# [remove] [noquality] [patchwise]
-[NAME:Antler-tip arrow]
+[NAME:Antler arrow]
+[POINT_ATTACK:2]
 [BLUNT_ATTACK:8]
 [WEIGHT:0.35]
 [PRICE:1.2]

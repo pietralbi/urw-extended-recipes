@@ -100,7 +100,7 @@
 [WEIGHT:0.16]
 [TILEGFX:it-darkfib]
 
-.Scour greasy wool. "Hunting horn"	 *HIDEWORKING* /10/ \7d\  [effort:1] [phys:stance,arms,hands] [assist:1]
+.Scour greasy wool. "Hunting horn"	 *HIDEWORKING* /10/ \7d\  |-1| [effort:2] [phys:stance,arms,hands] [assist:1]
 {Greasy wool}	(20)	[ask_num]	[remove]
 {[NEARBY_TILE:Water]}  'Abundant water to wash the wool'
 {Container} [ground]
@@ -112,8 +112,8 @@
 [WEIGHT:0.12]
 [TILEGFX:it-darkfib]
 
-.Card wool. "Hunting horn"	[phys:stance,arms,hands] /4/ *HIDEWORKING* [patch:20] [assist:1]
-{Wool}		[remove] [patchwise]
+.Card wool. "Hunting horn"	*HIDEWORKING*  /4/  |-1| [effort:2] [phys:stance,arms,hands]  [assist:1]
+{Wool}		(20)	[ask_num]  [remove]
 {*comb}		'Comb for carding'
 [NAME:Bunch of fibres from wool]
 [TILEGFX:it-fibre]
@@ -132,9 +132,10 @@
 [TYPE:tool]
 [MATERIAL:cloth]
 [PRICE:0.6]
-[WEIGHT:1.1]
+[WEIGHT:1]
 
 // Weave cloths 
+// 50% more valuable than the most expensive cloth of the same material
 
 .Weave nettle cloth. 	"Bandage" 	/6h/ 	*HIDEWORKING* |2| [effort:2] [phys:arms,stance] [assist:1]
 {Spun nettle yarn} 	(5) 	[remove]
@@ -142,7 +143,7 @@
 [NAME:Nettle cloth]
 [WEIGHT:5]
 [MATERIAL:cloth]
-[PRICE:1.8]
+[PRICE:35]
 [TILEGFX:it-cloth]
 
 .Weave linen cloth. 	"Bandage" 	/6h/ 	*HIDEWORKING* |2| [effort:2] [phys:arms,stance] [assist:1]
@@ -151,7 +152,7 @@
 [NAME:Linen cloth]
 [WEIGHT:5]
 [MATERIAL:cloth]
-[PRICE:2.6]
+[PRICE:50]
 [TILEGFX:it-cloth]
 
 .Weave woollen cloth. 		"Bandage" 	/6h/ 	*HIDEWORKING* |2| [effort:2] [phys:arms,stance] [assist:1]
@@ -160,13 +161,13 @@
 [NAME:Woollen cloth]
 [WEIGHT:5]
 [MATERIAL:cloth]
-[PRICE:3.5]
+[PRICE:75]
 [TILEGFX:it-cloth]
 
 // Shredding existing clothes
 
 .Shred wool fabric into fibres. "Hunting Horn" *CARPENTRY* /5/ [patchwise:10] [effort:1] |-2| [phys:hands,one-armed] [assist:1]
-{Woollen *} #0.1# [remove] [patchwise] 'woollen cloth'
+{Woollen *} #0.1# [remove] [patchwise] 'Woollen cloth'
 {*comb} 'Comb to separate the fibres'
 {Knife} <Small knife>
 [NAME:Bunch of fibres from wool]
@@ -177,7 +178,7 @@
 [WEIGHT:0.1]
 
 .Shred linen into fibres. "Hunting Horn" *CARPENTRY* /5/ [patchwise:10] [effort:1] |-2| [phys:hands,one-armed] [assist:1]
-{Linen *} #0.1# [remove] [patchwise] 'linen cloth'
+{Linen *} #0.1# [remove] [patchwise] 'Linen cloth'
 {*comb} 'Comb to separate the fibres'
 {Knife} <Small knife>
 [NAME:Bunch of fibres from flax]
@@ -188,7 +189,7 @@
 [WEIGHT:0.1]
 
 .Shred nettle fabric into fibres. "Hunting Horn" *CARPENTRY* /5/ [patchwise:10] [effort:1] |-2| [phys:hands,one-armed] [assist:1]
-{Nettle *} #0.1# [remove] [patchwise] 'nettle cloth'
+{Nettle *} #0.1# [remove] [patchwise] 'Nettle cloth'
 {*comb} 'Comb to separate the fibres'
 {Knife} <Small knife>
 [NAME:Bunch of fibres from nettle]
@@ -212,15 +213,15 @@
 [LENGTH:15]
 
 .Twist cord from yarn. "Cord" *CARPENTRY* [patch:5] %50% /15/ [effort:0] |-2| [phys:hands]
-{Spun * yarn} [remove] [patchwise]
+{Spun * yarn} [remove] [patchwise] 'Spun yarn' 
 {Knife} <Small knife>
 [NAME:Twisted cord]
 [MATERIAL:cloth]
 [WEIGHT:1]
 [LENGTH:30]
 
-.Braid rope from yarn. "Rope" *CARPENTRY* /1h/ [effort:1] [phys:hands] [assist:1]
-{Spun * yarn} [remove] [patchwise]
+.Braid rope from yarn. "Rope" *CARPENTRY* [patch:5] /1h/ [effort:1] [phys:hands] [assist:1]
+{Spun * yarn} [remove] [patchwise] 'Spun yarn'
 {Knife} <Small knife>
 [Name:Braided rope]
 [MATERIAL:cloth]
@@ -232,7 +233,7 @@
 
 [SUBMENU_START:utility article]
 
-.Bag. *COMMON* [noquality] /1h/ [effort:1] [phys:hands]
+.Bag. *COMMON* [noquality] /3h/ |1| [effort:1] [phys:hands]
 {*cloth} #1.0# [remove]
 {Knife} <Small Knife>
 

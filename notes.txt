@@ -19,8 +19,11 @@ Cord:
 284 torches = 1 broad knife
 1 torch : 0.06 squirrel hide 
 
+1 board : 1 squirrel hide
+
 1 nettle shirt = 1.7 squirrel hides
 1 nettle cowl = 0.4 squirrel hides
+
 
 ### Fur crafting
 1.2 -> 1  // Cap
