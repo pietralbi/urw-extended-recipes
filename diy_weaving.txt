@@ -49,7 +49,6 @@
 [PRICE:0]
 [WEIGHT:1]
 
-// Note that flax produces twice as much raw weight in stalks, making it a better source for raw materials
 .Soak flax. "Hunting Horn" [noquality] *AGRICULTURE* /1/ \14d\ |-2| [effort:0] [phys:arms,stance,one-armed]	
 {Flax} (20) [ask_num] [remove]
 {[NEARBY_TILE:Water]} 'Soak thoroughly in water'
@@ -102,7 +101,7 @@
 
 .Scour greasy wool. "Hunting horn"	 *HIDEWORKING* /10/ \7d\  |-1| [effort:2] [phys:stance,arms,hands] [assist:1]
 {Greasy wool}	(20)	[ask_num]	[remove]
-{[NEARBY_TILE:Water]}  'Abundant water to wash the wool'
+{[NEARBY_TILE:Water]}  'Abundant water for washing'
 {Container} [ground]
 {Fire} '+to dry the wool'
 //{[NEARBY_TILE:Fence]} 'A fence to dry the wool on'

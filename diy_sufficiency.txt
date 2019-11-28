@@ -1,35 +1,35 @@
 [SUBMENU_START:utility article]
 
-.Sauna scoop. *CARPENTRY* [effort:1] [phys:arms,hands] /60/ %10% |-1|
+.Sauna scoop. *CARPENTRY* [effort:1] /60/ %10% |-1|  [phys:arms,hands]
 {Block of wood} [remove][noquality]
 {Board} [remove]
 {Axe} <Carving axe>
 {Knife} <Small knife>
 
-.Net. *HIDEWORKING* [effort:1] [phys:arms,hands] /4h/
+.Net. *FISHING* [effort:1] |2| /6h/ [phys:arms,hands]
 {Cord} =250= [ground] [remove]
-{Birch-bark strip} =10= [remove] '+for floats'
-{Rock} (10) [remove] [noquality] '+for weights'
+{Birch-bark strip} =75= [remove] '+as floats'
+{Rock} [remove] [ground] [noquality] '+as weight'
 {Staff} (2) [ground] '+to help the weaving'
 {Knife} <Small knife>
 
-.Fishing rod. *FISHING* [effort:1] [phys:arms,hands] /30/
-{Tying equipment} (2) [remove]
+.Fishing rod. *FISHING* [effort:1] |1| /90/ [phys:arms,hands] 
+{Cord} =30= [remove]
 {Staff} [ground] [remove]
-{Birch-bark strip} =2= [remove] '+for a float'
+{Birch-bark strip} =1= [remove] '+as a float'
 {Fish hook} [remove]
 {Knife} <Small knife>
 
 .Wooden tub. [effort:2] [phys:arms,hands] *CARPENTRY* /3h/
-{Rope} =6= [remove] '+for hoops'
+{Rope} =6= [remove] '+as hoops'
 {Pine resin} (2) [remove] [noquality] '+for waterproofing'
 {Board} (4) [remove]
 {Fire} [ground]
 {Axe} <Carving axe>
 {Knife} <Small knife>
 
-.Small barrel. "Bag" [effort:3] [phys:arms,hands] *CARPENTRY* /4h/
-{Rope} =12= [remove] '+for hoops'
+.Small barrel. "Wooden tub" [effort:3] [phys:arms,hands] *CARPENTRY* /4h/
+{Rope} =12= [remove] '+as hoops'
 {Pine resin} (4) [remove] [noquality] '+for waterproofing'
 {Board} (8) [remove]
 {Fire} [ground]
@@ -40,10 +40,10 @@
 [TYPE:container]
 [MATERIAL:wood]
 [WEIGHT:10]
-[PRICE:50]
+[PRICE:9.25]
 
-.Large barrel. "Bag" [effort:3] [phys:arms,hands] *CARPENTRY* /6h/
-{Rope} =18= [remove] '+for hoops'
+.Large barrel. "Wooden tub" [effort:3] [phys:arms,hands] *CARPENTRY* /6h/
+{Rope} =18= [remove] '+as hoops'
 {Pine resin} (10) [remove] [noquality] '+for waterproofing'
 {Board} (12) [remove]
 {Fire} [ground]
@@ -54,7 +54,7 @@
 [TYPE:container]
 [MATERIAL:wood]
 [WEIGHT:30]
-[PRICE:70]
+[PRICE:14.75]
 
 [SUBMENU_END:utility article]
 
@@ -75,7 +75,7 @@
 [SUBMENU_START:tying equipment]
 
 .Untie loop snare.	"Cord"	*COMMON*	/5/ 	[effort:1] [phys:hands]
-{Loop snare}	(1)			[remove] 
+{Loop snare}			[remove] 
 [LENGTH:3]
 [WEIGHT:0.1]
 [NAME:Cord]
