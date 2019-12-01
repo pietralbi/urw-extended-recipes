@@ -26,9 +26,8 @@
 .Woollen clothes. -P- *MAKE* 
 .Mining. -M- *MAKE*
 .Smithing. -S- *MAKE*
-.Tools. -G- *MAKE*
-.Armor Repair. -A- *MAKE*
-.Crafting tools. -H- *MAKE*
+.Iron tools. -G- *MAKE*
+.Armor repair. -A- *MAKE*
 .Drying. -Y- *COOKERY*
 
 -end

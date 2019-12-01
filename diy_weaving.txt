@@ -3,15 +3,15 @@
 // Tools
 
 .Heckling comb. "Hunting Horn" *CARPENTRY* /2h/ |1| [effort:2] [phys:arms,one-armed] [assist:1]
-{Antler} [remove]
+{Wooden Stake} (14) [remove]
 {Board} [remove]
 {Axe} <Carving axe>
 {Knife} <Small knife>
-[TILEGFX:vl-bcomb]
 [TYPE:tool]
 [MATERIAL:antler]
 [PRICE:0.5]
 [WEIGHT:2]
+[TILEGFX:it-hecomb] // Todo graphics
 
 .Spindle. "Hunting Horn" *CARPENTRY* /90/ |1| [effort:1] [phys:arms,one-armed] [assist:1]
 {Wooden Stake} [remove] '+for the shaft'
