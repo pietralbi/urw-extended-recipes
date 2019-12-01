@@ -319,16 +319,6 @@
 
 [SUBMENU_END:Smithing]
 
-[SUBMENU_START:weapons]
-
-.Broadhead arrow.  [effort:1] [phys:hands,one-armed] *CARPENTRY* /45/ [patch:5]
-{Branch}   [remove] [patchwise] [noquality]
-{Knife}
-{Feather} (3) [remove] [patchwise] [noquality]
-{Cord} =1=    [remove] [patchwise] 
-{Iron arrow broadhead} [remove] [patchwise]
-
-[SUBMENU_END:weapons]
 
 
 [SUBMENU_START:Iron tools and weapons]
@@ -403,26 +393,6 @@
 {Leather} #0.5# [remove] [optional] '+for the hilt'
 {Knife} <Small knife>
 
-.Spear. [effort:2] [phys:arms,hands] *CARPENTRY* /35/
-{Iron spearhead}  [remove]
-{Staff}    [remove]
-{Cord}  =3= [remove]
-{Knife} <Small knife>
-
-.Short spear. "Spear"	[effort:2] [phys:arms,hands]	*CARPENTRY*	/3h/ 
-{Iron spearhead}	[remove]
-{Staff} 		[remove]
-{Cord}  =3= [remove]
-{Knife}
-[BLUNT_ATTACK:2]
-[EDGE_ATTACK:-]
-[POINT_ATTACK:7]
-[AD_CLASS:4/1]
-[1HPENALTY:0]
-[MATERIAL:iron]
-[WEIGHT:3.5]
-[TILEGFX:wp-sspear]		//Todo graphics
-
 .Handaxe. [effort:1] [phys:arms,hands] *CARPENTRY* /35/
 {Iron small axehead}  [remove]
 {Wooden stake}   [remove] '+for the handle'
@@ -475,7 +445,35 @@
 [NAME:Iron pot]
 [MATERIAL:iron]
 
+.Throwing spear. "Spear"	[effort:2] [phys:arms,hands]	*CARPENTRY*	/3h/ 
+{Iron spearhead}	[remove]
+{Staff} 		[remove]
+{Cord}  =3= [remove]
+{Knife}
+[BLUNT_ATTACK:2]
+[EDGE_ATTACK:-]
+[POINT_ATTACK:7]
+[AD_CLASS:4/1]
+[1HPENALTY:0]
+[MATERIAL:iron]
+[WEIGHT:3]
+[TILEGFX:wp-sspear]		//Todo graphics
+
+.Spear. [effort:2] [phys:arms,hands] *CARPENTRY* /35/
+{Iron spearhead}  [remove]
+{Staff}    [remove]
+{Cord}  =3= [remove]
+{Knife} <Small knife>
+
+.Broadhead arrow.  [effort:1] [phys:hands,one-armed] *CARPENTRY* /45/ [patch:5]
+{Branch}   [remove] [patchwise] [noquality]
+{Knife}
+{Feather} (3) [remove] [patchwise] [noquality]
+{Cord} =1=    [remove] [patchwise] 
+{Iron arrow broadhead} [remove] [patchwise]
+
 [SUBMENU_END:Iron tools]
+
 
 [SUBMENU_START:Armor repair]
 .Repair lamellar cuirass. "Lamellar Cuirass" [effort:2] [phys:arms,hands] *CARPENTRY* /3h/ %-70% |+1|
