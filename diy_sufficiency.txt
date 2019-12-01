@@ -17,7 +17,7 @@
 {Cord} =30= [remove]
 {Staff} [ground] [remove]
 {Birch-bark strip} =1= [remove] '+as a float'
-{Fish hook} [remove]
+{*fish hook} [remove]
 {Knife} <Small knife>
 
 .Wooden tub. [effort:2] [phys:arms,hands] *CARPENTRY* /3h/
