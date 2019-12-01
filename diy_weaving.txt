@@ -13,16 +13,15 @@
 [PRICE:0.5]
 [WEIGHT:2]
 
-// TODO: new graphic
 .Spindle. "Hunting Horn" *CARPENTRY* /90/ |1| [effort:1] [phys:arms,one-armed] [assist:1]
 {Wooden Stake} [remove] '+for the shaft'
 {Block of wood} [remove] [noquality] '+for the whorl'
 {Axe} <Carving axe>
-[TILEGFX:it-distaff]
 [TYPE:tool]
 [MATERIAL:wood]
 [PRICE:0.6]
 [WEIGHT:1.5]
+[TILEGFX:it-distaff] 	// Todo graphics
 
 .Loom. "Hunting Horn" *CARPENTRY* /5h/ |2|	[effort:2] [phys:arms,stance] [assist:3]
 {Board} (5) [remove]
@@ -31,11 +30,11 @@
 {Rock} (20) [remove] [noquality] 'Rocks to weight the warp'
 {Axe} <Carving axe>
 {Knife} <Small axe>
-[TILEGFX:it-loom]
 [TYPE:tool]
 [MATERIAL:wood]
 [PRICE:7.5]
 [WEIGHT:120]
+[TILEGFX:it-loom]
 
 // Plant retting
 
@@ -43,11 +42,11 @@
 {Nettle} (20) [ask_num] [remove]
 {[NEARBY_TILE:Water]} 'Soak thoroughly in water'
 [NAME:Retted nettle]
-[TILEGFX:it-retted]
 [TYPE:plant]
 [MATERIAL:cloth]
 [PRICE:0]
 [WEIGHT:1]
+[TILEGFX:it-retted]
 
 .Soak flax. "Hunting Horn" [noquality] *AGRICULTURE* /1/ \14d\ |-2| [effort:0] [phys:arms,stance,one-armed]	
 {Flax} (20) [ask_num] [remove]
@@ -63,29 +62,29 @@
 {Hemp} (20) [ask_num] [remove]
 {[NEARBY_TILE:Water]} 'Soak thoroughly in water'
 [NAME:Retted hemp]
-[TILEGFX:it-retted]
 [TYPE:plant]
 [MATERIAL:cloth]
 [PRICE:0]
 [WEIGHT:1]
+[TILEGFX:it-retted]
 
 .Dry retted plants.  "Hunting Horn"	[noquality]	*AGRICULTURE*	/1/  \7d\	|-2| [effort:0] [phys:arms,stance,one-armed] [assist:1]
 {Retted *} 		(20)	[ask_num]	[remove]  [name:Dried retted %s] [naming:last word]	'Retted plants'	
-[TILEGFX:it-retted] 
 [TYPE:plant]
 [PRICE:0]
 [WEIGHT:0.25]
+[TILEGFX:it-retted] 
 
 .Extract fibre from plant. 	"Hunting Horn"	*AGRICULTURE*	/15/  	[effort:3] 	[phys:arms,stance] [assist:2]
 {Dried retted *} 	 (20)	[ask_num]		[remove] [noquality] [ground] [name:Bunch of fibres from %s] [naming:last word] 'Dried retted plants'
 {Beater} '+to beat the stalks'
 {Heckling comb} 'Comb to remove the pith'
 {Knife} <Small knife>
-[TILEGFX:it-fibre]
 [TYPE:timber]
 [MATERIAL:cloth]
 [PRICE:0.02]
 [WEIGHT:0.1]
+[TILEGFX:it-fibre]
 
 // Wool scouring and carding
 
@@ -115,11 +114,11 @@
 {Wool}		(20)	[ask_num]  [remove]
 {*comb}		'Comb for carding'
 [NAME:Bunch of fibres from wool]
-[TILEGFX:it-fibre]
 [TYPE:timber]
 [MATERIAL:cloth]
 [PRICE:0.02]
 [WEIGHT:0.1]
+[TILEGFX:it-fibre]
 
 // Added "Spun" to avoid being used for clothes before manifactured into cloth
 .Spin yarn. 		"Hunting Horn" 	*HIDEWORKING*	/30/  [patch:10] [effort:1]  [phys:hands,one-armed] [assist:2]
@@ -127,11 +126,11 @@
 {Staff} '+to hold the fibres'
 {Cord} =3= 
 {Spindle} '+to spin the yarn'
-[TILEGFX:it-yarn]
 [TYPE:tool]
 [MATERIAL:cloth]
 [PRICE:0.6]
 [WEIGHT:1]
+[TILEGFX:it-yarn]	// Todo graphics
 
 // Weave cloths 
 // 50% more valuable than the most expensive cloth of the same material
@@ -170,33 +169,33 @@
 {*comb} 'Comb to separate the fibres'
 {Knife} <Small knife>
 [NAME:Bunch of fibres from wool]
-[TILEGFX:it-fibre]
 [TYPE:timber]
 [MATERIAL:cloth]
 [PRICE:0.02]
 [WEIGHT:0.1]
+[TILEGFX:it-fibre]
 
 .Shred linen into fibres. "Hunting Horn" *CARPENTRY* /5/ [patchwise:10] [effort:1] |-2| [phys:hands,one-armed] [assist:1]
 {Linen *} #0.1# [remove] [patchwise] 'Linen cloth'
 {*comb} 'Comb to separate the fibres'
 {Knife} <Small knife>
 [NAME:Bunch of fibres from flax]
-[TILEGFX:it-fibre]
 [TYPE:timber]
 [MATERIAL:cloth]
 [PRICE:0.02]
 [WEIGHT:0.1]
+[TILEGFX:it-fibre]
 
 .Shred nettle fabric into fibres. "Hunting Horn" *CARPENTRY* /5/ [patchwise:10] [effort:1] |-2| [phys:hands,one-armed] [assist:1]
 {Nettle *} #0.1# [remove] [patchwise] 'Nettle cloth'
 {*comb} 'Comb to separate the fibres'
 {Knife} <Small knife>
 [NAME:Bunch of fibres from nettle]
-[TILEGFX:it-fibre]
 [TYPE:timber]
 [MATERIAL:cloth]
 [PRICE:0.02]
 [WEIGHT:0.1]
+[TILEGFX:it-fibre]
 
 [SUBMENU_END:Weaving]
 
@@ -362,7 +361,7 @@
 [MATERIAL:cloth]
 [ARMOUR_MATERIAL:cloth]
 [ARMOUR_COVERAGE:hand]
-[TILEGFX:ar-mittens.png] 
+[TILEGFX:ar-mittens] 
 
 .Linen breast band. "Linen cowl" *COMMON* /60/	[effort:1] [phys:arms,hands] [assist:1]
 {Linen *}  'Linen cloth'		#1.2# 	[remove]

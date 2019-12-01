@@ -1,6 +1,8 @@
 ### Cords to weigths
 Birch bark:
 1 lb = 75 ft
+1.2 lb = 88ft
+ -38 ft = -0.5lb
 
 Withe:
 1 lb = 8 ft
@@ -47,3 +49,28 @@ Cord:
    >> heckle >>
 bunch of fibers = 0.1lb
    		
+### Smithing
+http://www.haraldthesmith.com/a-week-of-iron-smelting/
+http://www.hurstwic.org/history/articles/manufacturing/text/bog_iron.htm
+https://en.wikipedia.org/wiki/Bog_iron
+https://en.wikipedia.org/wiki/Charcoal_pile
+https://en.wikipedia.org/wiki/Charcoal
+https://web.archive.org/web/20040315062219/http://www.geoarch.co.uk/experimental/charcoal.html
+https://www.youtube.com/watch?v=1yK0rLQa3j4
+
+firewood to charcoal 20% mass efficiency
+bog iron to bloom 15% mass efficiency
+charcoal to bog iron about 3 : 2   + 1.5 kg
+min 15kg of smelting --> 33lb
+
+750 firewood (x1.5lb) --> 450 carchoal (x0.5lb)
+ -- gather 5 bog ore (x1.8lb) per 1h
+18 bog iron (x1.8lb) --> 1 iron bloom (8.1lb)
+96 carchoal (x0.5lb) ..> 
+1 iron bloom (8.1lb) --> 1 wrought iron (6.3lb)
+
+
+### Terrains
+wetland --> any close to water
+dry --> heatland,
+dryish --> ?
