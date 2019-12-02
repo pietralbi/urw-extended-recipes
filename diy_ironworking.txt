@@ -43,14 +43,13 @@
 .Scoop lake bog iron. "Rock" [effort:3]  [phys:arms,hands,stance] 	*FISHING*	/45/ [noquality] [patch:10] [assist:1]
 {[TILE:water]}					'Be in the waters'
 {[TERRAIN:lake]}				'in a lake'  
-{Sesta}							'+to probe the bottom'
+{Sesta}					    '+to probe the bottom'
 {Net}						    '+to scoop'
 [NAME:Bog iron]
 [MATERIAL:iron]
 [PRICE:0.02]
 [WEIGHT:1.8]
 [TILEGFX:it-ironore] //Todo graphics
-
 
 .Mine a stone anvil. "Block of wood"	*CARPENTRY* [effort:4] /4h/ |2| [phys:stance,arms,hands]	
 {[NEARBY_TILE:Big rock]} 'Find a big rock'
@@ -148,7 +147,7 @@
 
 // Re-use iron from objects
 
-.Melt down iron scraps. "Hunting Horn"  *CARPENTRY* /4h/ \4h\ |2| [effort:3] [phys:arms,hands,stance]
+.Weld together iron scraps. "Hunting Horn"  *CARPENTRY* /4h/ \4h\ |2| [effort:3] [phys:arms,hands,stance]
 {Iron *} #9.5# [remove] [noquality] 'Iron scraps'
 {Charcoal} (42) [remove]
 {*hammer}   [ground] 'Hammer'
@@ -289,7 +288,7 @@
 [WEIGHT:2]
 [TILEGFX:it-shohead] // Todo graphics
 
-.Iron fish hook. "Hunting Horn" [phys:arms, hands] *CARPENTRY* /30/ |+1|
+.Fish hook. "Hunting Horn" [phys:arms, hands] *CARPENTRY* /30/ |+1|
 {Wrought iron} #0.5# [remove]
 {Charcoal}  (11) [remove] [ground]
 {Iron hammer}   [ground] 'Iron hammer'
@@ -348,14 +347,14 @@
 
 .Iron anvil.    "Block of wood"  *CARPENTRY* /6h/ %30% [effort:4] [phys:arms,hands,stance]
 {Wrought iron} #40# [remove]
-{Stone}  (8) [remove] [noquality] '+as support'
+{Stone}  (10) [remove] [noquality] '+as support'
 {Charcoal} 	(90) 	[remove] [ground]
 {*hammer}   [ground] 'Hammer'
 {*tongs}    [ground] 'Tongs'
 {*anvil} 	[ground] 'Anvil'
 {Forge} [ground]
 [MATERIAL:iron]
-[WEIGHT:150]
+[WEIGHT:170]
 [PRICE:72]
 [TILEGFX:it-feanvil] //Todo graphics
 [TYPE:tool]
