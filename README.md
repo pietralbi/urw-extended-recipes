@@ -192,8 +192,8 @@ You shouldn't be copying over any existing files here.
 	- Antler-tipped arrow
 		+ In-between a normal arrow and a blunt one
 	
- * Birch-bark bandage:
-		- A simple bandage made from birch-bark strips
+ * Birch-bark bandage
+	- A simple bandage made from birch-bark strips
 	
 * New iron weapons and tools:
 	- Iron hammer
@@ -253,3 +253,4 @@ Many thanks to:
 	* https://en.wikipedia.org/wiki/Charcoal
 	* https://web.archive.org/web/20040315062219/http://www.geoarch.co.uk/experimental/charcoal.html
 	* https://www.youtube.com/watch?v=1yK0rLQa3j4
+	* https://mypeculiarnature.blogspot.com/2018/04/oroshiganemaking-steel-1.html
