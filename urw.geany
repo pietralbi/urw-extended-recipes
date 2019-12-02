@@ -27,16 +27,21 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=7
+current_page=4
 FILE_NAME_0=172;Markdown;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2Fcookery_glossary.txt;0;4
 FILE_NAME_1=11168;Markdown;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2Fdiy_weaving.txt;0;4
 FILE_NAME_2=884;None;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2Fmenudef_sufficiency.txt;0;4
-FILE_NAME_3=52;None;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2Fnotes.txt;0;4
-FILE_NAME_4=1014;Markdown;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2Fdiy_glossary.txt;0;4
-FILE_NAME_5=1411;Markdown;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2Fdiy_sufficiency.txt;0;4
-FILE_NAME_6=938;Markdown;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2FUnrealWorld.lnk%2Fdiy_testing.txt;0;4
-FILE_NAME_7=12406;Markdown;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2Fdiy_ironworking.txt;0;4
-FILE_NAME_8=1144;None;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2FUnrealWorld.lnk%2Fdiy_ironworking.txt;0;4
+FILE_NAME_3=875;None;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2Fnotes.txt;0;4
+FILE_NAME_4=5397;Markdown;0;EUTF-8;1;1;1;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2FREADME.md;0;4
+FILE_NAME_5=1971;Markdown;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2Fdiy_glossary.txt;0;4
+FILE_NAME_6=1469;Markdown;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2Fdiy_sufficiency.txt;0;4
+FILE_NAME_7=938;Markdown;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2FUnrealWorld.lnk%2Fdiy_testing.txt;0;4
+FILE_NAME_8=12406;Markdown;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2Fdiy_ironworking.txt;0;4
+FILE_NAME_9=0;None;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2FBAC%2Fdiy_BAC_Weapons.txt;0;4
+FILE_NAME_10=0;None;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2FBAC%2Fdiy_BAC_Boneworking.txt;0;4
+FILE_NAME_11=0;None;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2FBAC%2Fdiy_BAC_Toolmaking.txt;0;4
+FILE_NAME_12=0;None;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2FBAC%2Fdiy_BAC_Bowying.txt;0;4
+FILE_NAME_13=988;None;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2FBAC%2Fdiy_BAC_Earthenware.txt;0;4
 
 [VTE]
 last_dir=/home/lex
