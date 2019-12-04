@@ -114,7 +114,7 @@ You shouldn't be copying over any existing files here.
 3. Dry the retted plants
 4. Extract the fibers
 	+ You can also extract fibers from existing clothes
-5. Spin the fibers into a yarn using the historical "spindle and distaff" method
+5. Spin the fibers into a yarn using the historical [spindle](https://en.wikipedia.org/wiki/Spindle) and [distaff](https://en.wikipedia.org/wiki/Distaff) method
 6. Build a loom and weave the yarn into raw cloth.
 7. Tailor the raw cloth to make clothes
 	+ Alternatively, raw cloth is a profitable trade good, worth x1.5 the same weight in tailored clothes. Live off as a fabric artisan!
@@ -216,15 +216,18 @@ Many thanks to:
 
 * The original developers Sami Maaranen and Erkka Lehmus for creating URW and its modding system.
 
-* The mod authors whose original work inspired this mod's development:
-	* Caethan for his self-sufficiency mod
+* Caethan, for his self-sufficiency mod, without which this mod would have not been made.  
+  This mod is a direct evolution of his sufficiency mod, and includes many of his additions, even if modified and re-adjusted. 
 		* https://www.unrealworld.fi/forums/index.php?topic=147.0
+
+
+* The mod authors whose original work inspired this mod's development:
 	* Brygun for his BAC & the community mod
 		* https://www.unrealworld.fi/forums/index.php?topic=4712.0
     * Stonelobber for his Primitive World mod
 		*	https://www.unrealworld.fi/forums/index.php?topic=1808.0  
 		
-* And many others mod authors who inspired the above mods:
+* And many others mod authors who inspired the above mods, whose work I have known only indirectly. The link to their mods has died with the old forum, but I will include them anyway:
 	* Rain for his Ironworking and Cloth mods which were used as the original base for the weaving and smithing sections
 		* Ironworking - http://z3.invisionfree.com/UrW_forum/index.php?showtopic=2147
 		* Cloth - http://z3.invisionfree.com/UrW_forum/index.php?showtopic=1839&st=0
