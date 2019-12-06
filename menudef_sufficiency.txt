@@ -21,12 +21,12 @@
 //
 // [SUBMENU_END:submenuname]
 // Already used for MAKE: BCLTRUW
-.Weaving. -E- *MAKE*
+.Weaving. -I- *MAKE*
 .Linen and nettle clothes. -O- *MAKE*
 .Woollen clothes. -P- *MAKE* 
 .Mining. -M- *MAKE*
 .Smithing. -S- *MAKE*
-.Iron tools. -G- *MAKE*
+.Iron tools and weapons. -D- *MAKE*
 .Armor repair. -A- *MAKE*
 .Drying. -Y- *COOKERY*
 

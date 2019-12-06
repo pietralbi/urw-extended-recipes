@@ -29,22 +29,11 @@
 [NAME:Rock]
 
 // Note: you need to find an open mire next to a spruce mire
-.Gather surface bog iron. "Rock" (5) [effort:2] [phys:stance,arms] *TIMBERCRAFT* /45/ [noquality] [assist:3] [patch:10]
+.Gather bog iron. "Rock" (5) [effort:2] [phys:stance,arms] *TIMBERCRAFT* /45/ [noquality] [assist:3] [patch:10]
 {Shovel} <Shovel>
 {Knife} <Knife> '+to cut the peat'
 {[NEARBY_TILE:Hole in the Ground]} 'Dig a hole'
 {[TERRAIN:open_mire]} 'next to a open mire'
-[NAME:Bog iron]
-[MATERIAL:iron]
-[PRICE:0.02]
-[WEIGHT:1.8]
-[TILEGFX:it-ironore] //Todo graphics
-
-.Scoop lake bog iron. "Rock" [effort:3]  [phys:arms,hands,stance] 	*FISHING*	/45/ [noquality] [patch:10] [assist:1]
-{[TILE:water]}					'Be in the waters'
-{[TERRAIN:lake]}				'in a lake'  
-{Sesta}					    '+to probe the bottom'
-{Net}						    '+to scoop'
 [NAME:Bog iron]
 [MATERIAL:iron]
 [PRICE:0.02]
@@ -77,20 +66,6 @@
 
 // Tools
 
-.Bloomery. "Hunting Horn" *BUILDING* [effort:4] /210/ |2| [phys:arms,stance]  [assist:3]
-{[TILE:Hole in the Ground]} 'Clear a hole in the ground'
-{Shovel} <Shovel>
-{Stone} (45) [remove] [ground] [noquality]
-{Rock} (25) [remove] [noquality]
-{Staff} (4) [remove]
-{Branch}	(15) [remove] [noquality]
-[NAME:Bloomery]
-[WEIGHT:1000]
-[MATERIAL:stone]
-[TYPE:tool]
-[PRICE:0]
-[TILEGFX:ter-bloory]
-
 .Bellows. "Hunting horn"	[effort:2] [phys:arms,hands]		*CARPENTRY*	/4h/
 {Board}	[remove]
 {Leather}	#10#	[remove]
@@ -101,9 +76,32 @@
 [PRICE:1.2]
 [TILEGFX:it-bellows]
 
+.Wooden tongs. "Hunting Horn" *CARPENTRY*  [effort:2] [phys:arms,hands,stance] /1h/ %-30%
+{Wooden stake} (2) [remove]
+{Rope}  [remove]
+[TYPE:tool]
+[MATERIAL:wood]
+[WEIGHT:2]
+[PRICE:0]
+[TILEGFX:it-wdtong]		//Todo graphics
+
+.Bloomery. "Hunting Horn" *BUILDING* [effort:4] /210/ |2| [phys:arms,stance]  [assist:3]
+{[TILE:Hole in the Ground]} 'Clear a hole in the ground'
+{Shovel} <Shovel>
+{Stone} (45) [remove] [ground] [noquality]
+{Rock} (25) [remove] [ground] [noquality]
+{Branch}	(15) [remove] [noquality]
+{Staff} (4) [remove]
+[NAME:Bloomery]
+[WEIGHT:1000]
+[MATERIAL:stone]
+[TYPE:tool]
+[PRICE:0]
+[TILEGFX:ter-bloory]
+
 .Forge. "Hunting horn" *BUILDING* [effort:4] /4h/ |2| [phys:arms,stance] 
 {Stone} (35) [remove] [ground] [noquality]
-{Rock} (10) [remove] [noquality]
+{Rock} (10) [remove] [ground] [noquality]
 {Staff} (3) [remove]
 [NAME:Forge]
 [WEIGHT:1000]
@@ -120,7 +118,7 @@
 {Charcoal} (102) [remove]
 {Bloomery} [ground]
 {Bellows}	[ground]
-{*tongs}	[ground]	'Tongs'
+{*tongs}	[ground]	'Iron or wooden tongs'
 {Block of wood} [noquality] 'Anvil or wooden block'
 {*hammer} [ground] 'Hammer to compact the bloom'
 [NAME:Bloom]
@@ -133,29 +131,60 @@
 .Refine iron bloom. "Hunting horn" [effort:4] [phys:arms,hands,stance] *CARPENTRY* |2| /4h/  \3h\
 {Bloom}  [remove] [patchwise]
 {Charcoal} (14) [remove] [patchwise]
-{*hammer}   [ground] 'Hammer'
-{*tongs}    [ground] 'Tongs'
-{*anvil} 	[ground] 'Anvil'
-{Forge} 	[ground]
 {Bellows}	[ground]
-[NAME:Wrought iron]
+{*hammer}   [ground] 'Iron or stone hammer'
+{*tongs}    [ground] 'Iron or wooden tongs'
+{*anvil} 	[ground] 'Iron or stone anvil'
+{Forge} 	[ground]
+[NAME:Wrought iron bar]
 [TYPE:tool]
 [MATERIAL:iron]
 [PRICE:12]
 [WEIGHT:6.3]
 [TILEGFX:it-irobar] //Todo graphics
 
+// Efficiency of about 50% (Evenstad process)
+.Hearth-refine iron into steel. "Hunting horn" [effort:3] [phys:arms,hands,stance] *CARPENTRY* |2| /7h/ \1h\
+{Wrought iron bar} #6.3# [remove] [noquality] 'Wrought iron'
+{Charcoal} (102) [remove]
+{Bloomery} [ground]
+{Bellows}	[ground]
+{Tongs}	[ground]	'Iron tongs'
+{*anvil} [noquality] 'Iron or stone anvil'
+{*hammer} [ground] 'Hammer to compact the pluck'
+[NAME:Pluck]
+[TYPE:tool]
+[MATERIAL:iron]
+[PRICE:0]
+[WEIGHT:3.15]
+[TILEGFX:it-stbloom] //Todo graphics
+
+.Refine steel pluck. "Hunting horn" [effort:4] [phys:arms,hands,stance] *CARPENTRY* |2| /2h/  \3h\
+{Bloom}  [remove] [patchwise]
+{Charcoal} (14) [remove] [patchwise]
+{Bellows}	[ground]
+{Hammer}   [ground] 'Iron hammer'
+{Tongs}    [ground] 'Iron tongs'
+{*anvil} 	[ground] 'Iron or stone anvil'
+{Forge} 	[ground]
+[NAME:Steel bar]
+[TYPE:tool]
+[MATERIAL:iron]
+[PRICE:28]
+[WEIGHT:5]
+[TILEGFX:it-irobar] //Todo graphics
+
 // Re-use iron from objects
 
-.Weld together iron scraps. "Hunting Horn"  *CARPENTRY* /4h/ \4h\ |2| [effort:3] [phys:arms,hands,stance]
-{Iron *} #9.5# [remove] [noquality] 'Iron scraps'
+.Weld iron scraps together. "Hunting horn"  *CARPENTRY* /4h/ \4h\ |2| [effort:3] [phys:arms,hands,stance]
+{Iron *} #7.5# [remove] [noquality] 'Iron scraps'
 {Charcoal} (42) [remove]
-{*hammer}   [ground] 'Hammer'
-{*tongs}    [ground] 'Tongs'
-{*anvil} 	[ground] 'Anvil'
-{Forge}  [ground] 
 {Bellows}	[ground]
-[NAME:Wrought iron]
+{*hammer}   [ground] 'Iron or stone hammer'
+{*tongs}    [ground] 'Iron or wooden tongs'
+{*anvil} 	[ground] 'Iron or stone anvil'
+{Forge}  [ground] 
+[NAME:Wrought iron bar]
 [TYPE:tool]
 [MATERIAL:iron]
 [PRICE:12]
@@ -164,12 +193,12 @@
 
 // Iron heads
 
-.Hammer head. "Hunting Horn" [effort:4] [phys:arms,hands,stance] *CARPENTRY* /5h/ |2|
-{Wrought iron} #4# [remove]
+.Hammer head. "Hunting horn" [effort:4] [phys:arms,hands,stance] *CARPENTRY* /5h/ |2|
+{Wrought iron bar} #4# [remove]  'Wrought iron'
 {Charcoal} (18) [remove]
-{*hammer}   [ground] 'Hammer'
-{*tongs}    [ground] 'Tongs'
-{*anvil} 	[ground] 'Anvil'
+{*hammer}   [ground] 'Iron or stone hammer'
+{*tongs}    [ground] 'Iron or wooden tongs'
+{*anvil} 	[ground] 'Iron or stone anvil'
 {Forge} [ground]
 [NAME:Iron hammerhead]
 [TYPE:tool]
@@ -178,95 +207,79 @@
 [WEIGHT:4]
 [TILEGFX:it-hamhead] // Todo graphics
 
-.Spear head. "Hunting Horn" [effort:4] [phys:arms,hands,stance] *CARPENTRY* /5h/ |2|
-{Wrought iron} #1# [remove]
-{Charcoal} (12) [remove]
-{Iron hammer}   [ground] 'Iron hammer'
-{*tongs}    [ground] 'Tongs'
-{*anvil} 	[ground] 'Anvil'
+.Short blade. "Hunting horn" [effort:4] [phys:arms,hands,stance] *CARPENTRY* /5h/ |2|
+{Steel bar} #0.15# [remove]  'Steel'
+{Wrought iron bar} #0.25# [remove]  'Wrought iron'
+{Charcoal} (11) [remove]
+{Hammer}   [ground] 'Iron hammer'
+{Tongs}    [ground] 'Iron tongs'
+{Anvil} 	[ground] 'Iron anvil'
 {Forge} [ground]
 {Water} #6# [remove] '+for hardening'
-{Whetstone} [ground] '+for sharpening'
-[NAME:Iron spearhead]
+[NAME:Iron shortblade]
 [TYPE:tool]
 [MATERIAL:iron]
 [PRICE:0]
-[WEIGHT:1]
-[TILEGFX:it-spehead]  //Todo graphics
+[WEIGHT:0.4]
+[TILEGFX:it-sknblade] //Todo graphics
 
-.Small axe head. "Hunting Horn" [effort:4] [phys:arms,hands,stance] *CARPENTRY* /5h/ |2|
-{Wrought iron} #1# [remove]
-{Charcoal} (12) [remove]
-{Iron hammer}   [ground] 'Iron hammer'
-{*tongs}    [ground] 'Tongs'
-{*anvil} 	[ground] 'Anvil'
+.Long blade. "Hunting horn" [effort:4] [phys:arms,hands,stance] *CARPENTRY* /5h/ |2|
+{Steel bar} #1.0# [remove]  'Steel'
+{Wrought iron bar} #2.5# [remove]  'Wrought iron'
+{Charcoal} (13) [remove]
+{Hammer}   [ground] 'Iron hammer'
+{Tongs}    [ground] 'Iron tongs'
+{Anvil} 	[ground] 'Iron anvil'
 {Forge} [ground]
 {Water} #6# [remove] '+for hardening'
-{Whetstone} [ground] '+for sharpening'
-[NAME:Iron small axehead]
+[NAME:Iron longblade]
 [TYPE:tool]
 [MATERIAL:iron]
 [PRICE:0]
-[WEIGHT:1]
-[TILEGFX:it-axehead]
+[WEIGHT:2.5]
+[TILEGFX:it-bknblade] //Todo graphics
 
-.Large axe head. "Hunting Horn" [effort:4] [phys:arms,hands,stance] *CARPENTRY* /5h/ |2|
-{Wrought iron} #3# [remove]
+.Small axe head. "Hunting horn" [effort:4] [phys:arms,hands,stance] *CARPENTRY* /5h/ |2|
+{Steel bar} #1# [remove]  'Steel'
+{Wrought iron bar} #2# [remove]  'Wrought iron'
 {Charcoal} (16) [remove]
-{Iron hammer}   [ground] 'Iron hammer'
-{*tongs}    [ground] 'Tongs'
-{*anvil} 	[ground] 'Anvil'
+{Hammer}   [ground] 'Iron hammer'
+{Tongs}    [ground] 'Iron tongs'
+{Anvil} 	[ground] 'Iron anvil'
 {Forge} [ground]
 {Water} #6# [remove] '+for hardening'
-{Whetstone} [ground] '+for sharpening'
-[NAME:Iron large axehead]
+[NAME:Iron small axehead]
 [TYPE:tool]
 [MATERIAL:iron]
 [PRICE:0]
 [WEIGHT:3]
 [TILEGFX:it-axehead]
 
-.Small knife blade. "Hunting Horn" [effort:4] [phys:arms,hands,stance] *CARPENTRY* /5h/ |2|
-{Wrought iron} #0.5# [remove]
-{Charcoal} (11) [remove]
-{Iron hammer}   [ground] 'Iron hammer'
-{*tongs}    [ground] 'Tongs'
-{*anvil} 	[ground] 'Anvil'
+.Large axe head. "Hunting horn" [effort:4] [phys:arms,hands,stance] *CARPENTRY* /5h/ |2|
+{Steel bar} #2# [remove]  'Steel'
+{Wrought iron bar} #4# [remove]  'Wrought iron'
+{Charcoal} (22) [remove]
+{Hammer}   [ground] 'Iron hammer'
+{Tongs}    [ground] 'Iron tongs'
+{Anvil} 	[ground] 'Iron anvil'
 {Forge} [ground]
 {Water} #6# [remove] '+for hardening'
-{Whetstone} [ground] '+for sharpening'
-[NAME:Iron small knifeblade]
+[NAME:Iron large axehead]
 [TYPE:tool]
 [MATERIAL:iron]
 [PRICE:0]
-[WEIGHT:0.5]
-[TILEGFX:it-sknblade] //Todo graphics
+[WEIGHT:6]
+[TILEGFX:it-axehead]
 
-.Large knife blade. "Hunting Horn" [effort:4] [phys:arms,hands,stance] *CARPENTRY* /5h/ |2|
-{Wrought iron} #1# [remove]
+.Sickle blade. "Hunting horn" [effort:4] [phys:arms,hands,stance] *CARPENTRY* /5h/ |2|
+{Steel bar} #0.5# [remove]  'Steel'
+{Wrought iron bar} #0.5# [remove]  'Wrought iron'
 {Charcoal} (12) [remove]
-{Iron hammer}   [ground] 'Iron hammer'
-{*tongs}    [ground] 'Tongs'
-{*anvil} 	[ground] 'Anvil'
+{Hammer}   [ground] 'Iron hammer'
+{Tongs}    [ground] 'Iron tongs'
+{Anvil} 	[ground] 'Iron anvil'
 {Forge} [ground]
 {Water} #6# [remove] '+for hardening'
-{Whetstone} [ground] '+for sharpening'
-[NAME:Iron large knifeblade]
-[TYPE:tool]
-[MATERIAL:iron]
-[PRICE:0]
-[WEIGHT:1]
-[TILEGFX:it-bknblade] //Todo graphics
-
-.Sickle blade. "Hunting Horn" [effort:4] [phys:arms,hands,stance] *CARPENTRY* /5h/ |2|
-{Wrought iron} #1# [remove]
-{Charcoal} (12) [remove]
-{Iron hammer}   [ground] 'Iron hammer'
-{*tongs}    [ground] 'Tongs'
-{*anvil} 	[ground] 'Anvil'
-{Forge} [ground]
-{Water} #6# [remove] '+for hardening'
-{Whetstone} [ground] '+for sharpening'
 [NAME:Iron sickleblade]
 [TYPE:tool]
 [MATERIAL:iron]
@@ -274,26 +287,60 @@
 [WEIGHT:1]
 [TILEGFX:it-sicblade] //Todo graphics
 
-.Shovel head. "Hunting Horn" [effort:4] [phys:arms,hands,stance] *CARPENTRY* /5h/ |2|
-{Wrought iron} #2# [remove]
+.Shovel head. "Hunting horn" [effort:4] [phys:arms,hands,stance] *CARPENTRY* /5h/ |2|
+{Steel bar} #0.5# [remove]  'Steel'
+{Wrought iron bar} #3# [remove]  'Wrought iron'
 {Charcoal} (14) [remove]
-{Iron hammer}   [ground] 'Iron hammer'
-{*tongs}    [ground] 'Tongs'
-{*anvil} 	[ground] 'Anvil'
+{Hammer}   [ground] 'Iron hammer'
+{Tongs}    [ground] 'Iron tongs'
+{Anvil} 	[ground] 'Iron anvil'
 {Forge} [ground]
+{Water} #6# [remove] '+for hardening'
 [NAME:Iron shovelhead]
 [TYPE:tool]
 [MATERIAL:iron]
 [PRICE:0]
-[WEIGHT:2]
+[WEIGHT:3.5]
 [TILEGFX:it-shohead] // Todo graphics
 
+.Spear head. "Hunting horn" [effort:4] [phys:arms,hands,stance] *CARPENTRY* /5h/ |2|
+{Steel bar} #0.5# [remove]  'Steel'
+{Wrought iron bar} #0.5# [remove]  'Wrought iron'
+{Charcoal} (12) [remove]
+{Hammer}   [ground] 'Iron hammer'
+{Tongs}    [ground] 'Iron tongs'
+{Anvil} 	[ground] 'Iron anvil'
+{Forge} [ground]
+{Water} #6# [remove] '+for hardening'
+[NAME:Iron spearhead]
+[TYPE:tool]
+[MATERIAL:iron]
+[PRICE:0]
+[WEIGHT:1]
+[TILEGFX:it-spehead]  //Todo graphics
+
+.Trident head. "Hunting horn" [effort:4] [phys:arms,hands,stance] *CARPENTRY* /5h/ |2|
+{Steel bar} #1# [remove]  'Steel'
+{Wrought iron bar} #1.5# [remove]  'Wrought iron'
+{Charcoal} (12) [remove]
+{Hammer}   [ground] 'Iron hammer'
+{Tongs}    [ground] 'Iron tongs'
+{Anvil} 	[ground] 'Iron anvil'
+{Forge} [ground]
+{Water} #6# [remove] '+for hardening'
+[NAME:Iron trident head]
+[TYPE:tool]
+[MATERIAL:iron]
+[PRICE:0]
+[WEIGHT:2.5]
+[TILEGFX:it-trihead]  //Todo graphics
+
 .Fish hook. "Hunting Horn" [phys:arms, hands] *CARPENTRY* /30/ |+1|
-{Wrought iron} #0.5# [remove]
+{Wrought iron bar} #0.5# [remove]  'Wrought iron'
 {Charcoal}  (11) [remove] [ground]
-{Iron hammer}   [ground] 'Iron hammer'
-{*tongs}    [ground] 'Tongs'
-{*anvil} 	[ground] 'Anvil'
+{*hammer}   [ground] 'Iron or stone hammer'
+{*tongs}    [ground] 'Iron or wooden tongs'
+{*anvil} 	[ground] 'Iron or stone anvil'
 {Forge} [ground]
 [NAME:Iron fish hook]
 [TYPE:tool]
@@ -302,17 +349,17 @@
 [TILEGFX:it-fehook]
 
 .Arrow broadhead.  (5)  "Hunting Horn" [effort:2] [phys:arms,hands,stance] *CARPENTRY* 	/4h/ [assist:1]
-{Wrought iron} #0.5# [remove]
+{Steel bar} #0.2# [remove]  'Steel'
+{Wrought iron bar} #0.3# [remove]  'Wrought iron'
 {Charcoal}  (11) [remove] [ground]
-{Iron hammer}			 	'Iron hammer'
-{*tongs}    [ground] 'Tongs'
-{*anvil} 	[ground] 'Anvil'
+{Hammer}   [ground] 'Iron hammer'
+{Tongs}    [ground] 'Iron tongs'
+{Anvil} 	[ground] 'Iron anvil'
 {Forge} [ground]
 {Water} #6# [remove] '+for hardening'
-{Whetstone} [ground] '+for sharpening'
 [NAME:Iron arrow broadhead]
 [MATERIAL:iron]
-[WEIGHT:0.07]
+[WEIGHT:0.1]
 [PRICE:0]
 [TILEGFX:it-brohead]
 
@@ -322,22 +369,13 @@
 
 [SUBMENU_START:Iron tools and weapons]
 
-.Wooden tongs. "Hunting Horn" *CARPENTRY*  [effort:2] [phys:arms,hands,stance] /1h/ %-30%
-{Wooden stake} (2) [remove]
-{Rope}  [remove]
-[TYPE:tool]
-[MATERIAL:wood]
-[WEIGHT:2]
-[PRICE:0]
-[TILEGFX:it-wdtong]		//Todo graphics
-
-.Iron tongs. "Hunting Horn" *CARPENTRY* [effort:4] [phys:arms,hands,stance] /200/ %50%
+.Tongs. "Hunting Horn" *CARPENTRY* [effort:4] [phys:arms,hands,stance] /200/ %30%
 {Wrought iron} #2# [remove]
 {Charcoal} (16) [remove]
 {Wooden stake} (2) [remove] '+as handles'
-{*hammer}   [ground] 'Hammer'
-{*tongs}    [ground] 'Tongs'
-{*anvil} 	[ground] 'Anvil'
+{*hammer}   [ground] 'Iron or stone hammer'
+{*tongs}    [ground] 'Iron or wooden tongs'
+{*anvil} 	[ground] 'Iron or stone anvil'
 {Forge} [ground]
 [TYPE:tool]
 [MATERIAL:iron]
@@ -345,13 +383,13 @@
 [PRICE:2.2]
 [TILEGFX:it-fetong]		//Todo graphics
 
-.Iron anvil.    "Block of wood"  *CARPENTRY* /6h/ %30% [effort:4] [phys:arms,hands,stance]
+.Anvil.    "Block of wood"  *CARPENTRY* /6h/ %30% [effort:4] [phys:arms,hands,stance]
 {Wrought iron} #40# [remove]
 {Stone}  (10) [remove] [noquality] '+as support'
 {Charcoal} 	(90) 	[remove] [ground]
-{*hammer}   [ground] 'Hammer'
-{*tongs}    [ground] 'Tongs'
-{*anvil} 	[ground] 'Anvil'
+{*hammer}   [ground] 'Iron or stone hammer'
+{*tongs}    [ground] 'Iron or wooden tongs'
+{*anvil} 	[ground] 'Iron or stone anvil'
 {Forge} [ground]
 [MATERIAL:iron]
 [WEIGHT:170]
@@ -359,7 +397,7 @@
 [TILEGFX:it-feanvil] //Todo graphics
 [TYPE:tool]
 
-.Iron hammer. "Maul" *CARPENTRY*  [effort:2] [phys:arms,hands,stance] /2h/
+.Hammer. "Maul" *CARPENTRY*  [effort:1] [phys:arms,hands] /40/
 {Iron hammerhead}  [remove]
 {Staff} [remove]
 {Rope} =3= [remove]
@@ -370,63 +408,9 @@
 [AD_CLASS:3/1]
 [1H_PENALTY:50]
 [MATERIAL:iron]
-[WEIGHT:8.6]
+[WEIGHT:8]
 [PRICE:2.5]
 [TILEGFX:wp-iroham]		//Todo graphics
-
-.Small knife. [effort:1] [phys:arms,hands] *CARPENTRY*  /30/ 
-{Iron small knifeblade}  [remove]
-{Cord} =1= [remove]
-{Leather} #0.1# [remove] '+for the hilt'
-{Knife} <Small knife>
-
-.Knife. [effort:1] [phys:arms,hands] *CARPENTRY*  /30/
-{Iron large knifeblade}  [remove]
-{Cord} =1=  [remove]
-{Leather} #0.5# [remove] [optional] '+for the hilt'
-{Knife} <Small knife>
-
-.Broad knife. [effort:1] [phys:arms,hands] *CARPENTRY*  /30/ 
-{Iron large knifeblade}  [remove]
-{Cord} =1= [remove]
-{Leather} #0.5# [remove] [optional] '+for the hilt'
-{Knife} <Small knife>
-
-.Handaxe. [effort:1] [phys:arms,hands] *CARPENTRY* /35/
-{Iron small axehead}  [remove]
-{Wooden stake}   [remove] '+for the handle'
-{Cord}  =3= [remove]
-{Knife} <Small knife>
-
-.Woodsman's axe. [effort:1] [phys:arms,hands] *CARPENTRY* /50/
-{Iron large axehead}  [remove]
-{Staff}   [remove]
-{Cord} =6= [remove]
-{Knife} <Small knife>
-
-.Carving axe. [effort:1] [phys:arms,hands] *CARPENTRY* /55/
-{Iron small axehead}  [remove]
-{Wooden stake}   [remove] '+for the handle'
-{Cord} =3= [remove]
-{Knife} <Small knife>
-
-.Splitting axe.  [effort:1] [phys:arms,hands] *CARPENTRY*  /50/
-{Iron large axehead}  [remove]
-{Staff}   [remove]
-{Cord} =6= [remove]
-{Knife} <Small knife>
-
-.Broad axe. [effort:1] [phys:arms,hands] *CARPENTRY* /50/
-{Iron large axehead}  [remove]
-{Staff}   [remove]
-{Cord} =6= [remove]
-{Knife} <Small knife>
-
-.Sickle. [effort:1] [phys:arms,hands] *CARPENTRY* /30/
-{Iron sickleblade}  [remove]
-{Wooden stake}   [remove] '+for the handle'
-{Cord}  =1= [remove]
-{Knife} <Small knife>
 
 .Shovel. [effort:1] [phys:arms,hands] *CARPENTRY* /45/
 {Iron shovelhead}  [remove]
@@ -435,7 +419,7 @@
 {Knife} <Small knife>
 
 .Pot. [effort:1] [phys:arms,hands] *CARPENTRY* /90/
-{Wrought Iron} #3#  [remove]
+{Wrought iron bar} #3#  [remove] 'Wrought iron'
 {Charcoal}  (16) [remove] [ground]
 {*hammer}   [ground] 'Hammer'
 {*tongs}    [ground] 'Tongs'
@@ -444,8 +428,85 @@
 [NAME:Iron pot]
 [MATERIAL:iron]
 
-.Throwing spear. "Spear"	[effort:2] [phys:arms,hands]	*CARPENTRY*	/3h/ 
+.Small knife. [effort:1] [phys:arms,hands] *CARPENTRY*  /30/ 
+.Broad knife. [effort:1] [phys:arms,hands] *CARPENTRY*  /30/ 
+.Hunting knife. [effort:1] [phys:arms,hands] *CARPENTRY*  /30/
+{Iron shortblade}  [remove]
+{Whetstone} [ground] '+for sharpening'
+{Cord} =1= [remove]
+{Leather} #0.25# [remove] '+for the hilt'
+{Knife} <Small knife>
+
+.Shortsword. [effort:1] [phys:arms,hands] *CARPENTRY* /45/
+.Broadsword. [effort:1]	[phys:arms,hands] *CARPENTRY* /45/
+{Iron longblade}  [remove]
+{Whetstone} [ground] '+for sharpening'
+{Cord} =3= [remove]
+{Leather} #0.5# [remove] '+for the hilt'
+{Knife} <Small knife>
+
+.Handaxe. [effort:1] [phys:arms,hands] *CARPENTRY* /35/
+.Carving axe. [effort:1] [phys:arms,hands] *CARPENTRY* /35/
+{Iron small axehead}  [remove]
+{Whetstone} [ground] '+for sharpening'
+{Wooden stake}   [remove] '+for the handle'
+{Cord} =3= [remove]
+{Knife} <Small knife>
+
+.Woodsman's axe. [effort:1] [phys:arms,hands] *CARPENTRY* /50/
+.Splitting axe.  [effort:1] [phys:arms,hands] *CARPENTRY*  /50/
+.Broad axe. [effort:1] [phys:arms,hands] *CARPENTRY* /50/
+{Iron large axehead}  [remove]
+{Whetstone} [ground] '+for sharpening'
+{Staff}   [remove]
+{Cord} =6= [remove]
+{Knife} <Small knife>
+
+.Sickle. [effort:1] [phys:arms,hands] *CARPENTRY* /35/
+{Iron sickleblade}  [remove]
+{Whetstone} [ground] '+for sharpening'
+{Wooden stake}   [remove] '+for the handle'
+{Cord}  =1= [remove]
+{Knife} <Small knife>
+
+.Woodsman's axe. [effort:1] [phys:arms,hands] *CARPENTRY* /50/
+.Splitting axe.  [effort:1] [phys:arms,hands] *CARPENTRY*  /50/
+.Broad axe. [effort:1] [phys:arms,hands] *CARPENTRY* /50/
+{Iron large axehead}  [remove]
+{Whetstone} [ground] '+for sharpening'
+{Staff}   [remove]
+{Cord} =6= [remove]
+{Knife} <Small knife>
+
+.Maul. [effort:1] [phys:arms,hands] *CARPENTRY* /40/
+{Iron hammerhead}  [remove]
+{Staff}   [remove]
+{Cord} =6= [remove]
+{Knife} <Small knife>
+
+.Mace. [effort:1] [phys:arms,hands] *CARPENTRY* /40/
+{Iron hammerhead}  [remove]
+{Wooden stake}   [remove] '+for the handle'
+{Cord} =6= [remove]
+{Knife} <Small knife>
+
+.Trident. [effort:2] [phys:arms,hands] *CARPENTRY* /65/
+{Iron trident head}  [remove]
+{Whetstone} [ground] '+for sharpening'
+{Staff}    [remove]
+{Cord}  =3= [remove]
+{Knife} <Small knife>
+
+.Spear. [effort:2] [phys:arms,hands] *CARPENTRY* /65/
+{Iron spearhead}  [remove]
+{Whetstone} [ground] '+for sharpening'
+{Staff}    [remove]
+{Cord}  =3= [remove]
+{Knife} <Small knife>
+
+.Throwing spear. "Spear"	[effort:2] [phys:arms,hands]  *CARPENTRY*	/65/ 
 {Iron spearhead}	[remove]
+{Whetstone} [ground] '+for sharpening'
 {Staff} 		[remove]
 {Cord}  =3= [remove]
 {Knife}
@@ -458,20 +519,15 @@
 [WEIGHT:3]
 [TILEGFX:wp-sspear]		//Todo graphics
 
-.Spear. [effort:2] [phys:arms,hands] *CARPENTRY* /35/
-{Iron spearhead}  [remove]
-{Staff}    [remove]
-{Cord}  =3= [remove]
-{Knife} <Small knife>
-
 .Broadhead arrow.  [effort:1] [phys:hands,one-armed] *CARPENTRY* /45/ [patch:5]
+{Iron arrow broadhead} [remove] [patchwise]
+{Whetstone} [ground] '+for sharpening'
 {Branch}   [remove] [patchwise] [noquality]
 {Knife}
 {Feather} (3) [remove] [patchwise] [noquality]
 {Cord} =1=    [remove] [patchwise] 
-{Iron arrow broadhead} [remove] [patchwise]
 
-[SUBMENU_END:Iron tools]
+[SUBMENU_END:Iron tools and weapons]
 
 
 [SUBMENU_START:Armor repair]

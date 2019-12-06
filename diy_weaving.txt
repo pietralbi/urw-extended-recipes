@@ -205,15 +205,15 @@
 .Braid fibres into cord. "Cord" *CARPENTRY* [patch:5] /90/ [effort:1] [phys:hands] [assist:1]
 {*fibres from*} #0.5#	[remove] [patchwise] 'Fabric fibres'   
 {Knife} <Small knife>
-[NAME:Braided cord]
+[NAME:Cord]
 [MATERIAL:cloth]
 [WEIGHT:0.5]
 [LENGTH:15]
 
-.Twist cord from yarn. "Cord" *CARPENTRY* [patch:5] %50% /15/ [effort:0] |-2| [phys:hands]
+.Twist cord from yarn. "Cord" *CARPENTRY* [patch:5] %30% /15/ [effort:0] |-2| [phys:hands]
 {Spun * yarn} [remove] [patchwise] 'Spun yarn' 
 {Knife} <Small knife>
-[NAME:Twisted cord]
+[NAME:Cord]
 [MATERIAL:cloth]
 [WEIGHT:1]
 [LENGTH:30]
@@ -221,7 +221,7 @@
 .Braid rope from yarn. "Rope" *CARPENTRY* [patch:5] /1h/ [effort:1] [phys:hands] [assist:1]
 {Spun * yarn} [remove] [patchwise] 'Spun yarn'
 {Knife} <Small knife>
-[Name:Braided rope]
+[Name:Rope]
 [MATERIAL:cloth]
 [WEIGHT:1]
 [LENGTH:15]

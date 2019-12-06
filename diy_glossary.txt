@@ -18,7 +18,7 @@
 [AD_CLASS:3/1]
 [1H_PENALTY:50]
 [MATERIAL:stone]
-[WEIGHT:6.5]
+[WEIGHT:7.5]
 [PRICE:0.2]
 [TILEGFX:wp-stoham]  //Todo graphics
 
@@ -26,7 +26,7 @@
 {Rock} '+for blade' [remove] [noquality]
 {Rock} '+for knapping' [noquality]
 
-.Bone knife. "Hunting knife " [effort:2] [phys:arms, one-armed] *CARPENTRY* /35/
+.Bone knife. "Hunting knife" [effort:2] [phys:arms, one-armed] *CARPENTRY* /35/
 {Bone} [remove] [noquality]
 {Cutting weapon} <Knife>
 {Cord} =1= [remove]
@@ -56,7 +56,7 @@
 {Cord} =1= [remove]
 {Cutting weapon} <Axe> 
 [TILEGFX:wp-bonejav]
-[NAME:Bone javelin]
+[NAME:Bone-tipped javelin]
 [WEIGHT:3]
 [PRICE:0.25]
 [POINT_ATTACK:7]
@@ -115,12 +115,13 @@
 {Feather} (3) [remove] [patchwise] [noquality]
 {Cord} =1=    [remove] [patchwise] 
 {Bone} #0.1# [remove] [patchwise] [noquality] 
-[NAME:Bone arrow]
+[NAME:Bone-tipped arrow]
 [POINT_ATTACK:2]
 [EDGE_ATTACK:4]
 [WEIGHT:0.1]
 [PRICE:1.2]
 [MATERIAL:bone]
+[TILEGFX:wp-bharrow]
 
 .Antler-tipped arrow. "Blunt arrow" [effort:1] [phys:hands,one-armed] *CARPENTRY* /45/ [patch:5]
 {Branch}   [remove] [patchwise] [noquality]
@@ -128,12 +129,13 @@
 {Feather} (3) [remove] [patchwise] [noquality]
 {Cord} =1=    [remove] [patchwise] 
 {Antler} #0.25# [remove] [noquality] [patchwise]
-[NAME:Antler arrow]
+[NAME:Antler-tipped arrow]
 [POINT_ATTACK:2]
 [BLUNT_ATTACK:4]
 [WEIGHT:0.35]
 [PRICE:1.2]
 [MATERIAL:antler]
+[TILEGFX:wp-blarrow]
 
 [SUBMENU_END:weapon]
 

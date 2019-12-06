@@ -8,7 +8,7 @@
 
 .Net. *FISHING* [effort:1] |2| /6h/ [phys:arms,hands]
 {Cord} =250= [ground] [remove]
-{Birch-bark strip} =75= [remove] '+as floats'
+{Birch-bark strip} =75= [remove] 'birch-bark as floats'
 {Rock} [remove] [ground] [noquality] '+as weight'
 {Staff} (2) [ground] '+to help the weaving'
 {Knife} <Small knife>
@@ -16,8 +16,8 @@
 .Fishing rod. *FISHING* [effort:1] |1| /90/ [phys:arms,hands] 
 {Cord} =30= [remove]
 {Staff} [ground] [remove]
-{Birch-bark strip} =1= [remove] '+as a float'
-{*fish hook} [remove]
+{Birch-bark strip} =1= [remove] 'birch-bark as a float'
+{*fish hook} [remove] 'Bone or iron fish hook'
 {Knife} <Small knife>
 
 .Wooden tub. [effort:2] [phys:arms,hands] *CARPENTRY* /3h/
@@ -60,7 +60,7 @@
 
 [SUBMENU_START:lumber]
 
-.Gather pine resin. "Hunting Horn" *COMMON* [noquality] [effort:1] [phys:hands,one-armed]  /30/
+.Gather pine resin. "Hunting horn" *COMMON* [noquality] [effort:1] [phys:hands,one-armed]  /30/
 {[NEARBY_TILE:*Pine]}  'A nearby pine tree'
 {Cutting weapon} <Small knife>
 [NAME:Pine resin]
@@ -68,7 +68,7 @@
 [MATERIAL:wood]
 [TYPE:timber]
 [WEIGHT:0.1]
-[PRICE:0.05]
+[PRICE:0.03]
 
 [SUBMENU_END:lumber]
 

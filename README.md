@@ -4,7 +4,7 @@ This is a set of modifications for the roguelike game [UnReal World](http://www.
 
 This mod started as a simple modification of [Caethan's UnReal World self-sufficiency mod](https://github.com/caethan/urw-sufficiency), 
 but it slowly grew to an extensive revision of the whole crafting system.  
-This mod aims at filling the gaps left by vanilla recipes, in a balanced and vanilla-style way. It allows you to live more self-sufficiently, crafting most needed tools and items without having to obtain the via trade. 
+The extended recipes mod aims at filling the gaps left by vanilla recipes, in a balanced and vanilla-style way. It allows you to live more self-sufficiently, crafting most needed tools and items without having to obtain the via trade. 
 Not everything is available -- complex armor and weapons and foreign crafts and must still be traded. Some new recipes and items were also added, such like making arrows and weapons from bones and antlers.
 
 The main focus of this mod is:
@@ -132,7 +132,7 @@ You shouldn't be copying over any existing files here.
 4. Follow the steps for linen and nettle
 
 
-### Metallurgy
+### Ironworking
 
 1. Gather bog ore from open mires
 	+ To gather the surface one, you need to find an open mire next to a spruce mire or another terrain that allows digging (*not* a pine mire or an open mire). 
@@ -175,7 +175,7 @@ You shouldn't be copying over any existing files here.
 * Small and large barrels
 
 * Stone hammer
-	- Good for basic metallurgy and bashing skulls
+	- Good for basic ironworking and bashing skulls
 		+ Two-handed and heavy, better than a club, not as good as a maul or mace
 
 * Northern staff-bow
@@ -217,8 +217,8 @@ Many thanks to:
 * The original developers Sami Maaranen and Erkka Lehmus for creating URW and its modding system.
 
 * Caethan, for his self-sufficiency mod, without which this mod would have not been made.  
-  This mod is a direct evolution of his sufficiency mod, and includes many of his additions, even if modified and re-adjusted. 
-		* https://www.unrealworld.fi/forums/index.php?topic=147.0
+  The extended recipes mod is a direct evolution of his sufficiency mod, and includes many of his additions, albeit modified and re-worked. 
+	* https://www.unrealworld.fi/forums/index.php?topic=147.0
 
 
 * The mod authors whose original work inspired this mod's development:
@@ -227,7 +227,7 @@ Many thanks to:
     * Stonelobber for his Primitive World mod
 		*	https://www.unrealworld.fi/forums/index.php?topic=1808.0  
 		
-* And many others mod authors who inspired the above mods, whose work I have known only indirectly. The link to their mods has died with the old forum, but I will include them anyway:
+* And many others mod authors who inspired the above mods, whose work I have known only indirectly. The link to their mods has died with the old forum, but here are included anyway:
 	* Rain for his Ironworking and Cloth mods which were used as the original base for the weaving and smithing sections
 		* Ironworking - http://z3.invisionfree.com/UrW_forum/index.php?showtopic=2147
 		* Cloth - http://z3.invisionfree.com/UrW_forum/index.php?showtopic=1839&st=0
@@ -248,7 +248,7 @@ Many thanks to:
 * The photographers who provided the pictures for the encyclopedia entry from Caethan's self-sufficiency mod
     * Birch-bark cap - Fanny Schertzer, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=10890204
 		
-* Many thanks also the various sources for informations on historical weaving, iron metallurgy and smithing. Here are only a few of the sources I have consulted:
+* Many thanks also the various sources for informations on historical weaving, ironworking and smithing. Here are only a few of the sources I have consulted:
 	* http://www.haraldthesmith.com/a-week-of-iron-smelting/
 	* http://www.hurstwic.org/history/articles/manufacturing/text/bog_iron.htm
 	* https://en.wikipedia.org/wiki/Bog_iron
