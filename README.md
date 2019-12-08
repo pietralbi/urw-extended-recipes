@@ -182,15 +182,13 @@ You shouldn't be copying over any existing files here.
 	- A combination of a bow and a ski-stick, in order to hunt bow and arrow while skying. Don't expect much accuracy, tough.
 		+ [Watch a demonstration from Sami](https://www.youtube.com/watch?v=Ez1CUoz0tdQ)  
 
-* Added bone and antler weapons
+* Added bone weapons
     - Bone knife
 		+ Better than a stone knife, not as good as a broad or hunting knife
     - Bone-tipped javelin
 		+ Slightly better than simple javellin 
 	- Bone-tipped arrow
-		+ In-between a normal arrow and a broadhead one
-	- Antler-tipped arrow
-		+ In-between a normal arrow and a blunt one
+		+ Causes bleeding like broadhead arrows
 	
  * Birch-bark bandage
 	- A simple bandage made from birch-bark strips

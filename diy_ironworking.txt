@@ -160,7 +160,7 @@
 [TILEGFX:it-stbloom] //Todo graphics
 
 .Refine steel pluck. "Hunting horn" [effort:4] [phys:arms,hands,stance] *CARPENTRY* |2| /2h/  \3h\
-{Bloom}  [remove] [patchwise]
+{Pluck}  [remove] [patchwise]
 {Charcoal} (14) [remove] [patchwise]
 {Bellows}	[ground]
 {Hammer}   [ground] 'Iron hammer'
