@@ -243,8 +243,9 @@ Many thanks to:
 		* http://z3.invisionfree.com/UrW_forum/index.php?showtopic=7331&st=0
     * thefinn (barrel sprites)
 
-* The photographers who provided the pictures for the encyclopedia entry from Caethan's self-sufficiency mod
-    * Birch-bark cap - Fanny Schertzer, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=10890204
+* The photographers who provided the pictures for the encyclopedia entry
+    * Birch-bark cap (from Caethan's self-sufficiency mod) - Fanny Schertzer, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=10890204
+	* Charcoal clamp - Raphael Saulus, https://commons.wikimedia.org/wiki/File:Kolmila.JPG
 		
 * Many thanks also the various sources for informations on historical weaving, ironworking and smithing. Here are only a few of the sources I have consulted:
 	* http://www.haraldthesmith.com/a-week-of-iron-smelting/
