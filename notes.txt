@@ -72,6 +72,9 @@ min 15kg of smelting --> 33lb
 96 carchoal (x0.5lb) ..> 
 1 iron bloom (8.1lb) --> 1 wrought iron (6.3lb)
 
+// Charcoal recipe:
+10 for starting + 2 * iron+steel weight
+
 
 ### Terrains
 wetland --> any close to water

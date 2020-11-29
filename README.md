@@ -1,4 +1,4 @@
-# Pietralunga's extended recipes 
+# Aruberuto's extended recipes 
 ### Mod for UnReal World 3.60 
 This is a set of modifications for the roguelike game [UnReal World](http://www.unrealworld.fi/) developed by Sami Maaranen and Erkka Lehmus.
 
@@ -159,6 +159,7 @@ You shouldn't be copying over any existing files here.
 	- Iron tongs
 	- Iron hammer
 	- Pot
+	- Shelds
 
 9. Hearth-refine the wrought iron into steel 
 

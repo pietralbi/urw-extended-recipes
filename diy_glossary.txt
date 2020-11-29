@@ -46,14 +46,14 @@
 {Cutting weapon} <Axe> 
 
 .Javelin. [effort:1] [phys:hands,one-armed]	*CARPENTRY*		/30/				[patch]
-{Wooden stake} [remove] [patchwise]
+{Staff} [remove] [patchwise]
 {Cutting weapon} <Axe> 
 {Fire} '+(for hardening the head)'
 
-.Bone-tipped javelin. "Javelin" [effort:1] [phys:hands,one-armed] *CARPENTRY* /45/
-{Staff} [remove]
-{Bone} #0.1# [remove] [noquality]
-{Cord} =1= [remove]
+.Bone-tipped javelin. "Javelin" [effort:1] [phys:hands,one-armed] *CARPENTRY* /45/ [patch]
+{Staff} [remove]	[patchwise]
+{Bone} #0.1# [remove] [noquality] [patchwise]
+{Cord} =1= [remove] [patchwise]
 {Cutting weapon} <Axe> 
 [TILEGFX:wp-bonejav]
 [NAME:Bone-tipped javelin]

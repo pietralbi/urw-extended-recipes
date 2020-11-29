@@ -1,7 +1,7 @@
 [SUBMENU_START:lumber]
 
 // 40% decrease in volume, 80% decrease in weight
-.Charcoal pile. (450) "Firewood" [effort:3] [phys:arms,stance] *TIMBERCRAFT* %-30% |2| /5h/ \19d\ [assist:3]
+.Charcoal pile. (450) "Firewood" [effort:3] [phys:arms,stance] *TIMBERCRAFT* %-5% |2| /5h/ \19d\ [assist:3]
 {Slender trunk} (3) [remove] [noquality] [ground]
 {Firewood} (750) [remove] [noquality] [ground] 
 {Spruce twig} (50) [remove] [noquality] [ground]
@@ -363,6 +363,20 @@
 [PRICE:0]
 [TILEGFX:it-brohead]
 
+.Shield boss. "Hunting horn" [effort:2] [phys:arms,hands,stance] *CARPENTRY* /3h/ |1|
+{Wrought iron bar} #2.5# [remove]  'Wrought iron'
+{Charcoal} (15) [remove]
+{Hammer}   [ground] 'Iron hammer'
+{Tongs}    [ground] 'Iron tongs'
+{Anvil} 	[ground] 'Iron anvil'
+{Forge} [ground]
+[NAME:Iron shovelhead]
+[TYPE:tool]
+[MATERIAL:iron]
+[PRICE:0]
+[WEIGHT:2.5]
+[TILEGFX:it-shboss] // Todo graphics
+
 [SUBMENU_END:Smithing]
 
 
@@ -527,169 +541,146 @@
 {Feather} (3) [remove] [patchwise] [noquality]
 {Cord} =1=    [remove] [patchwise] 
 
+.Roundshield. [effort:1] [phys:arms,hands] *CARPENTRY* /95/
+{Shield boss}  [remove]
+{Board} [remove]
+{Staff}   [remove] '+for the grip'
+{Leather} #1.2# [remove] '+as reinforcement'
+{Axe} <Handaxe>
+
+.Buckler. [effort:1] [phys:arms,hands] *CARPENTRY* /45/
+{Shield boss}  [remove]
+{Board} [remove]
+{Wooden stake}   [remove] '+for the grip'
+{Axe} <Handaxe>
+
 [SUBMENU_END:Iron tools and weapons]
 
 
 [SUBMENU_START:Armor repair]
-.Repair lamellar cuirass. "Lamellar Cuirass" [effort:2] [phys:arms,hands] *CARPENTRY* /3h/ %-70% |+1|
-{Lamellar *} #16.5# [remove] 'Lamellar scraps'
-{Leather *} #3# [remove] 'Leather scraps for backing'
-{Knife} <Small Knife>
-[NAME:Lamellar Cuirass]
 
-.Repair lamellar forearm guards. "Lamellar Forearm Guards" [effort:2] [phys:arms,hands] *CARPENTRY* /1h/ %-70% |+1|
+// Lamellar stuff
+
+.Repair lamellar cuirass. "Lamellar cuirass" [effort:2] [phys:arms,hands] *CARPENTRY* /3h/ |+1|
+{Lamellar cuirass} [remove]
+{Lamellar *} #15# [remove] 'Lamellar scraps'
+{Leather *} #3# [remove] 'Leather scraps for lacing'
+{Knife} <Small Knife>
+
+.Repair lamellar forearm guards. "Lamellar forearm guards" [effort:2] [phys:arms,hands] *CARPENTRY* /1h/ |+1|
+{Lamellar forearm guards}	[remove]
+{Lamellar *} #4# [remove] 'Lamellar scraps'
+{Leather *} #1# [remove] 'Leather scraps for lacing'
+{Knife} <Small Knife>
+
+.Repair lamellar hauberk. "Lamellar hauberk" [effort:2] [phys:arms,hands] *CARPENTRY* /7h/  |+1|
+{Lamellar hauberk} [remove]
+{Lamellar *} #35# [remove] 'Lamellar scraps'
+{Leather *} #5# [remove] 'Leather scraps for lacing'
+{Knife} <Small Knife>
+
+.Repair lamellar rerebraces. "Lamellar rerebraces" [effort:2] [phys:arms,hands] *CARPENTRY* /1h/  |+1|
+{Lamellar rerebraces} [remove]
 {Lamellar *} #5# [remove] 'Lamellar scraps'
-{Leather *} #1# [remove] 'Leather scraps for backing'
+{Leather *} #1# [remove] 'Leather scraps for lacing'
 {Knife} <Small Knife>
-[NAME:Lamellar Forearm Guards]
 
-.Repair lamellar hauberk. "Lamellar hauberk" [effort:2] [phys:arms,hands] *CARPENTRY* /7h/ %-70% |+1|
-{Lamellar *} #38.5# [remove] 'Lamellar scraps'
-{Leather *} #7# [remove] 'Leather scraps for backing'
+.Repair lamellar shin guards. "Lamellar shin guards" [effort:2] [phys:arms,hands] *CARPENTRY* /2h/  |+1|
+{Lamellar shin guards} [remove]
+{Lamellar *} #9# [remove] 'Lamellar scraps'
+{Leather *} #2# [remove] 'Leather scraps for lacing'
 {Knife} <Small Knife>
-[NAME:Lamellar hauberk]
-[VALUE:89]
 
-.Repair lamellar long hauberk. "Hunting Horn" [effort:2] [phys:arms,hands] *CARPENTRY* /8h/ %-70% |+1|
-{Lamellar *} #46# [remove] 'Lamellar scraps'
-{Leather *} #8# [remove] 'Leather scraps for backing'
-{Knife} <Small Knife>
-[NAME:Lamellar Patched Long Hauberk]
-[TILEGFX:armour]
-[TYPE:armour]
-[WEIGHT:40]
-[ARMOUR_MATERIAL:lamellar]
-[ARMOUR_COVERAGE:long_hauberk]
-[VALUE:107]
 
-.Repair lamellar rerebraces. "Lamellar Rerebraces" [effort:2] [phys:arms,hands] *CARPENTRY* /1h/ %-70% |+1|
-{Lamellar *} #6# [remove] 'Lamellar scraps'
-{Leather *} #1# [remove] 'Leather scraps for backing'
-{Knife} <Small Knife>
-[NAME:Lamellar Patched Rerebraces]
-[VALUE:18]
+// Mail stuff
 
-.Repair lamellar shin guards. "Lamellar Shin Guards" [effort:2] [phys:arms,hands] *CARPENTRY* /2h/ %-70% |+1|
-{Lamellar *} #10.5# [remove] 'Lamellar scraps'
-{Leather *} #2# [remove] 'Leather scraps for backing'
-{Knife} <Small Knife>
-[NAME:Lamellar Patched Shin Guards]
-[VALUE:38]
+.Repair mail habergeon. "Mail habergeon" [effort:3] [phys:arms,hands] *CARPENTRY* /5h/ |+1|
+{Mail habergeon} [remove]
+{Mail *} #22# [remove] 'Mail scraps'
+{*hammer}   [ground] 'Hammer'
+{*tongs}    [ground] 'Tongs'
+{*anvil} 	[ground] 'Anvil'
 
-.Repair mail habergon. "Mail Habergon" [effort:3] [phys:arms,hands] *CARPENTRY* /5h/ %-70% |+1|
-{Mail *} #24.5# [remove] 'Mail scraps'
-{Cloth} #2.5# [remove] 'Cloth for padding'
-{Wrought Iron} #1# [remove]
-{Knife} <Small Knife>
-{Iron hammer}
-{Iron tongs}
-[NAME:Mail Patched Habergon]
-[VALUE:76]
+.Repair mail hauberk. "Mail hauberk" [effort:3] [phys:arms,hands] *CARPENTRY* /5h/  |+1|
+{Mail hauberk} [remove]
+{Mail *} #25# [remove] 'Mail scraps'
+{*hammer}   [ground] 'Hammer'
+{*tongs}    [ground] 'Tongs'
+{*anvil} 	[ground] 'Anvil'
 
-.Repair mail hauberk. "Mail Hauberk" [effort:3] [phys:arms,hands] *CARPENTRY* /5h/ %-70% |+1|
-{Mail *} #27.5# [remove] 'Mail scraps'
-{Cloth} #2.5# [remove] 'Cloth for padding'
-{Wrought Iron} #1# [remove]
-{Knife} <Small Knife>
-{Iron hammer}
-{Iron tongs}
-[NAME:Mail Patched Hauberk]
-[VALUE:100]
+.Repair long mail hauberk. "Long mail hauberk" [effort:3] [phys:arms,hands] *CARPENTRY* /6h/ |+1|
+{Long mail hauberk} [remove]
+{* Mail *} #30# [remove] 'Mail scraps'
+{*hammer}   [ground] 'Hammer'
+{*tongs}    [ground] 'Tongs'
+{*anvil} 	[ground] 'Anvil'
 
-.Repair long mail hauberk. "Long Mail Hauberk" [effort:3] [phys:arms,hands] *CARPENTRY* /6h/ %-70% |+1|
-{* Mail *} #33# [remove] 'Mail scraps'
-{Cloth} #3# [remove] 'Cloth for padding'
-{Wrought Iron} #1# [remove]
-{Knife} <Small Knife>
-{Iron hammer}
-{Iron tongs}
-[NAME:Mail Patch Long Hauberk]
-[VALUE:106]
-
-.Repair mail cowl. "Mail Cowl" [effort:3] [phys:arms,hands] *CARPENTRY* /1h/ %-70% |+1|
-{* Mail *} #6# [remove] 'Mail scraps'
-{Cloth} #1# [remove] 'Cloth for padding'
-{Knife} <Small Knife>
-{Iron hammer}
-{Iron tongs}
-[NAME:Mail Patched Cowl]
-[VALUE:12]
-
-.Repair long mail cowl. "Long Mail Cowl" [effort:3] [phys:arms,hands] *CARPENTRY* /1h/ %-70% |+1|
+.Repair long mail cowl. "Long mail cowl" [effort:3] [phys:arms,hands] *CARPENTRY* /1h/ |+1|
+{Long mail cowl} [remove]
 {* Mail *} #5# [remove] 'Mail scraps'
-{Cloth} #1# [remove] 'Cloth for padding'
-{Knife} <Small Knife>
-{Iron hammer}
-{Iron tongs}
-[NAME:Mail Patched Long Cowl]
-[VALUE:17]
+{*hammer}   [ground] 'Hammer'
+{*tongs}    [ground] 'Tongs'
+{*anvil} 	[ground] 'Anvil'
 
-.Repair mail mittens. "Mail Mittens" [effort:3] [phys:arms,hands] *CARPENTRY* /1h/ %-70% |+1|
-{* Mail *} #4# [remove] 'Mail scraps'
-{Cloth} #1# [remove] 'Cloth for padding'
-{Knife} <Small Knife>
-{Iron hammer}
-{Iron tongs}
-[NAME:Mail Patched Mittens]
-[VALUE:10]
+.Repair mail cowl. "Mail cowl" [effort:3] [phys:arms,hands] *CARPENTRY* /1h/ |+1|
+{Mail cowl} [remove]
+{* Mail *} #3# [remove] 'Mail scraps'
+{*hammer}   [ground] 'Hammer'
+{*tongs}    [ground] 'Tongs'
+{*anvil} 	[ground] 'Anvil'
 
-.Repair mail leggings. "Mail Leggings" [effort:3] [phys:arms,hands] *CARPENTRY* /5h/ %-70% |+1|
-{* Mail *} #25.5# [remove] 'Mail scraps'
-{Cloth} #2.5# [remove] 'Cloth for padding'
-{Wrought Iron} #1# [remove]
-{Knife} <Small Knife>
-{Iron hammer}
-{Iron tongs}
-[NAME:Mail Patched Leggings]
-[VALUE:81]
+.Repair mail mittens. "Mail mittens" [effort:3] [phys:arms,hands] *CARPENTRY* /1h/ |+1|
+{Mail mittens} [remove]
+{* Mail *} #3# [remove] 'Mail scraps'
+{*hammer}   [ground] 'Hammer'
+{*tongs}    [ground] 'Tongs'
+{*anvil} 	[ground] 'Anvil'
 
-.Repair iron coudes. "Iron Coudes" [effort:4] [phys:arms,hands] *CARPENTRY* /30/ %-70% |+1|
-{Iron *} #2# [remove] 'Iron scraps'
-{Wrought Iron} #1#  [remove]
-{Charcoal}  #12# [remove] [ground]
-{Iron hammer}
-{Iron tongs}
+.Repair mail leggings. "Mail leggings" [effort:3] [phys:arms,hands] *CARPENTRY* /5h/  |+1|
+{Mail leggings} [remove]
+{* Mail *} #23# [remove] 'Mail scraps'
+{*hammer}   [ground] 'Hammer'
+{*tongs}    [ground] 'Tongs'
+{*anvil} 	[ground] 'Anvil'
+
+
+// Iron stuff
+
+.Repair iron coudes. "Iron coudes" [effort:4] [phys:arms,hands] *CARPENTRY* /30/  |+1|
+{Iron coudes} [remove]
+{Wrought iron} #2#  [remove]
+{Charcoal}  #14# [remove] [ground]
+{*hammer}   [ground] 'Hammer'
+{*tongs}    [ground] 'Tongs'
+{*anvil} 	[ground] 'Anvil'
 {Forge} [ground]
-{Anvil} [ground]
-{Fire}
-[NAME:Iron Coudes]
-[VALUE:6]
 
-.Repair iron helm. "Iron Helm" [effort:4] [phys:arms,hands] *CARPENTRY* /45/ %-70% |+1|
-{Iron *} #3# [remove] 'Iron scraps'
-{Wrought Iron} #1.5#  [remove]
-{Charcoal}  #18# [remove] [ground]
-{Iron hammer}
-{Iron tongs}
+.Repair iron helm. "Iron helm" [effort:4] [phys:arms,hands] *CARPENTRY* /45/ |+1|
+{Iron helm} [remove]
+{Wrought iron} #3#  [remove]
+{Charcoal}  #16# [remove] [ground]
+{*hammer}   [ground] 'Hammer'
+{*tongs}    [ground] 'Tongs'
+{*anvil} 	[ground] 'Anvil'
 {Forge} [ground]
-{Anvil} [ground]
-{Fire}
-[NAME:Iron Patched Helm]
-[VALUE:12]
 
-.Repair iron kneecops. "Iron Coudes" [effort:4] [phys:arms,hands] *CARPENTRY* /30/ %-70% |+1|
-{Iron *} #2# [remove] 'Iron scraps'
-{Wrought Iron} #1#  [remove]
-{Charcoal}  #12# [remove] [ground]
-{Iron hammer}
-{Iron tongs}
+.Repair iron kneecops. "Iron kneecops" [effort:4] [phys:arms,hands] *CARPENTRY* /30/  |+1|
+{Iron kneecops} [remove]
+{Wrought iron} #2#  [remove]
+{Charcoal}  #14# [remove] [ground]
+{*hammer}   [ground] 'Hammer'
+{*tongs}    [ground] 'Tongs'
+{*anvil} 	[ground] 'Anvil'
 {Forge} [ground]
-{Anvil} [ground]
-{Fire}
-[NAME:Iron Patched Kneecops]
-[VALUE:9]
 
-.Repair iron spectacle Helm. "Iron Spectacle Helm" [effort:4] [phys:arms,hands] *CARPENTRY* /30/ %-70% |+1|
-{Iron *} #3.5# [remove] 'Iron scraps'
-{Wrought Iron} #2#  [remove]
-{Charcoal}  #21# [remove] [ground]
-{Iron hammer}
-{Iron tongs}
+.Repair iron spectacle Helm. "Iron spectacle helm" [effort:4] [phys:arms,hands] *CARPENTRY* /60/  |+1|
+{Iron spectacle helm} [remove]
+{Wrought iron} #3.5#  [remove]
+{Charcoal}  #17# [remove] [ground]
+{*hammer}   [ground] 'Hammer'
+{*tongs}    [ground] 'Tongs'
+{*anvil} 	[ground] 'Anvil'
 {Forge} [ground]
-{Anvil} [ground]
-{Fire}
-[NAME:Iron Patched Spectacle Helm]
-[VALUE:16]
 
 
 [SUBMENU_END:Armor repair]
