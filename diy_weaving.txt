@@ -233,7 +233,7 @@
 
 .Bag. *COMMON* [noquality] /3h/ |1| [effort:1] [phys:hands]
 {*cloth} #1.0# [remove]
-{Knife} <Small Knife>
+{Knife} <Small knife>
 
 [SUBMENU_END:utility article]
 

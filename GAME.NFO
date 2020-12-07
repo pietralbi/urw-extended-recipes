@@ -1520,7 +1520,7 @@ Pot is a useful tool in several COOKERY based activities.
 There are several special items in the game which are commonly called tools. 
 You can use these items by [a]pply command. Their use varies widely as does the method of application. 
 The most common tools are described here:<br>
- TRAPS, PUNT, PADDLE, SESTA, NET, FISHING ROD, TORCH, SHOVEL, SKIS, SKI STICK<br>
+ TRAPS, PUNT, PADDLE, SESTA, NET, FISHING ROD, TORCH, SHOVEL, SKIS, SKI STICK, VASTA<br>
  TONGS, ANVIL, BELLOWS, BLOOMERY, FORGE<br>
  HECKLING COMB, SPINDLE, LOOM<br>
 ***
@@ -2244,7 +2244,7 @@ for melee combat.
 
 .THROWING SPEAR.
 A javelin with a metal spearhead or a spear with a shorter shaft, depending 
-on the point of view. Good for throwing and attacking, but its shorter
+on how you see it. Good for throwing and attacking, but its shorter
 length gives it worse defensive capabilities then a spear.
 ***
 
@@ -2522,7 +2522,7 @@ cre-reindeer.jpg
 .FOREST REINDEER.
 The forest reindeer is somewhat bigger than the reindeer. Its height
 is about 100 cm, length 200 cm and weight about 100 kg. Both males
-and females are horned. The colour of the fur varies from snowhite
+and females have antlers. The colour of the fur varies from snowhite
 to almost black. Individual hairs in the fur are hollow and filled
 with air which makes the fur extremely resistant to the coldness.
    In the summer reindeers dwell in the peaceful backwoods eating
@@ -2796,7 +2796,7 @@ Used to tie and bind things together. Cords may vary in lenght,
 thickness and firmness.
 ***
 
-.LEATHER ROPE.
+.LEATHER ROPE.ROPE.
 Used to tie and bind things together. Ropes may vary in lenght,
 thickness and firmness.
 ***
@@ -2838,6 +2838,15 @@ procedure is about cutting very thin chips away from the outer side of the
 wall. A surface cut this way is weather-proof.
 ***
 
+.VASTA.
+Vasta is a kind of broom made out of leafy birch twigs and used during sauna bath
+to gently beat oneself with in order to get the muscles relaxed, body massaged and skin cleansed.
+Vasta can be made only when there are good sized leaves in birch trees. The best season for this
+is during and after the midsummer when the leaves have matured to robust enough stage.
+Vastas do wear up in use so during the summer a new vasta is usually made for each sauna session.
+Using vasta is an essential part of taking a sauna bath.
+***
+
 .SAUNA.
 Sauna is the place for giving birth, and it also is the place where the dead 
 ones get their final wash before the burial ceremony. Sauna is place for 
@@ -2846,12 +2855,14 @@ malts. The heart of the sauna is a big fire-place made of roundish stones.
 To heat up the sauna man burns fire in the fireplace until some of the stones
 begin to glow red-hot. Usually this takes four to six hours. After that man
 has to wait until all the smoke goes out. Then people can come in and climb
-up the benches of the sauna. Applying sauna scoop to toss some water on the
-hot stones will release soft, pleasant steam into the sauna. The temperature
-is from 120 to 60 degrees celcius. In the beginning the sauna is the hottest,
-and cools down slowly. A sauna with good fireplace can last hot for twelve
-hours. Occasionally it happens that a sauna is heated too much, or there
-might be something wrong with the fire-place, and the sauna-building will
+up the benches of the sauna. Water is tossed on the hot stones to release soft, 
+pleasant steam into the sauna. This can be done by applying a water container
+you are carrying. People also use vasta during the sauna bath to gently beat 
+themselves for relaxation and cleansing.<br>
+      The temperature is from 120 to 60 degrees celcius. In the beginning the sauna
+is the hottest, and cools down slowly. A sauna with good fireplace can last warm for twelve
+hours. Occasionally it happens that a sauna is heated too much, or there might be
+something wrong with the fire-place, and the sauna-building will
 catch fire. In that case the building will burn down very fast and there is 
 nothing to do, unless one manages to stop the fire right in the beginning.
 For that reason saunas are usually built far enough from any other buildings,

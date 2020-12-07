@@ -60,7 +60,7 @@
 
 [SUBMENU_START:lumber]
 
-.Gather pine resin. "Hunting horn" *COMMON* [noquality] [effort:1] [phys:hands,one-armed]  /30/
+.Gather pine resin. "Hunting horn" *TIMBERCRAFT* [noquality] [effort:1] [phys:hands,one-armed]  /30/
 {[NEARBY_TILE:*Pine]}  'A nearby pine tree'
 {Cutting weapon} <Small knife>
 [NAME:Pine resin]

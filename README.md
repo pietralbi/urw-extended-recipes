@@ -55,9 +55,9 @@ will be overwritten, so backup them by prefixing "backup_" to their name (if the
 
 There are two subfolders in both the Unreal World folder and the mod folder:
     - "truegfx":  pictures used in the encyclopedia and for various other purposes
-    - "truetile": sprites for items and creatures in the game
-* Copy over the contents of each of these folders in the mod into the Unreal World folders.
-You shouldn't be copying over any existing files here.
+    - "truetile": sprites for items and creatures in the game  
+    
+* Copy over the contents of each of these folders of the mod into the Unreal World folders. You shouldn't be copying over any existing files here.  
 * Start up the game and enjoy the new options!
 
 
@@ -65,19 +65,7 @@ You shouldn't be copying over any existing files here.
 
 * Except the very basic recipes, switched the relative skill from COMMON to CARPENTRY or TIMBERCRAFT
 
-* Slender trunks replaced with staffs for several recipes.  This allows staff quality to affect the final item quality, enabling you to build high quality items with some effort:
-	- Grainflail
-		- removed +30% skill bonus to compensate
-	- Ski stick
-	- Sesta
-		- reduced skill bonus to +20% to compensate
 * [noquality] added for some ingredients of fixed quality to avoid negatively impacting finished quality:
-	- Wooden cup and bowl: block of wood
-		- removed +20% skill bonus to compensate
-	- Wooden shovel: block of wood
-		- removed +10% skill bonus to compensate
-	- Wooden stake and staff: Slender trunk
-		- reduced skill bonus by 30% each to compensate
 
 ## Vanilla buildings enabled for construction
 
@@ -135,7 +123,7 @@ You shouldn't be copying over any existing files here.
 ### Ironworking
 
 1. Gather bog ore from open mires
-	+ To gather the surface one, you need to find an open mire next to a spruce mire or another terrain that allows digging (*not* a pine mire or an open mire). 
+	+ To gather bog ore, you need to find an open mire next to a spruce mire or another terrain that allows digging (*not* a pine mire or an open mire). 
 		1. Dig a hole at the border of the spruce mire and
 		2. Stand next to the hole, in the open mire
 		- This is the only trick to prevent being able to collect bog ore from *anywhere*
@@ -171,6 +159,11 @@ You shouldn't be copying over any existing files here.
     - Sickle
     - Fish hooks
 
+### Armor repair
+
+* Repair lamellar, iron and mail armor. You cannot craft them, but you can repair them similarly to how fur/leather clothes are repaired.
+* It is a lossy process, so you need the same weight in lamellae/chainmail/wrought iron to repair a piece of armor. You will also need leather for the lacing of lame
+
 
 ## New items
 * Small and large barrels
@@ -192,7 +185,7 @@ You shouldn't be copying over any existing files here.
 		+ Causes bleeding like broadhead arrows
 	
  * Birch-bark bandage
-	- A simple bandage made from birch-bark strips
+		+ A simple bandage made from birch-bark strips
 	
 * New iron weapons and tools:
 	- Iron hammer
@@ -249,11 +242,11 @@ Many thanks to:
 	* Charcoal clamp - Raphael Saulus, https://commons.wikimedia.org/wiki/File:Kolmila.JPG
 		
 * Many thanks also the various sources for informations on historical weaving, ironworking and smithing. Here are only a few of the sources I have consulted:
-	* http://www.haraldthesmith.com/a-week-of-iron-smelting/
 	* http://www.hurstwic.org/history/articles/manufacturing/text/bog_iron.htm
+	* https://web.archive.org/web/20040315062219/http://www.geoarch.co.uk/experimental/charcoal.html
+	* https://mypeculiarnature.blogspot.com/2018/04/oroshiganemaking-steel-1.html
+	* http://www.haraldthesmith.com/a-week-of-iron-smelting/
 	* https://en.wikipedia.org/wiki/Bog_iron
 	* https://en.wikipedia.org/wiki/Charcoal_pile
 	* https://en.wikipedia.org/wiki/Charcoal
-	* https://web.archive.org/web/20040315062219/http://www.geoarch.co.uk/experimental/charcoal.html
 	* https://www.youtube.com/watch?v=1yK0rLQa3j4
-	* https://mypeculiarnature.blogspot.com/2018/04/oroshiganemaking-steel-1.html

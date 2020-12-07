@@ -483,15 +483,6 @@
 {Cord}  =1= [remove]
 {Knife} <Small knife>
 
-.Woodsman's axe. [effort:1] [phys:arms,hands] *CARPENTRY* /50/
-.Splitting axe.  [effort:1] [phys:arms,hands] *CARPENTRY*  /50/
-.Broad axe. [effort:1] [phys:arms,hands] *CARPENTRY* /50/
-{Iron large axehead}  [remove]
-{Whetstone} [ground] '+for sharpening'
-{Staff}   [remove]
-{Cord} =6= [remove]
-{Knife} <Small knife>
-
 .Maul. [effort:1] [phys:arms,hands] *CARPENTRY* /40/
 {Iron hammerhead}  [remove]
 {Staff}   [remove]

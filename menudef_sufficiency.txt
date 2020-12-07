@@ -28,6 +28,6 @@
 .Smithing. -S- *MAKE*
 .Iron tools and weapons. -D- *MAKE*
 .Armor repair. -A- *MAKE*
-.Drying. -Y- *COOKERY*
+.Drying vegetables. -Y- *COOKERY*
 
 -end

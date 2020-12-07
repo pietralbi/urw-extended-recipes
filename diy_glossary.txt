@@ -94,7 +94,14 @@
 [PRICE:6]
 [TILEGFX:wp-staffbow]
 
-// Todo Longbow (see encyclopedia entry)
+.Longbow. [effort:2] [phys:stance,arms] *CARPENTRY*		/640/ |2|
+{Slender trunk} [remove] [noquality]
+{Axe} <Carving axe>
+{Knife}
+{Leather}	#1#	 [remove]
+{Antler}	 [remove] +'for the tips'
+{Cord} =5= [remove]
+
 
 .Arrow. [effort:1] [phys:hands,one-armed]  	*CARPENTRY*        /30/    [patch:5]
 {Branch}      [remove] [patchwise] [noquality]
@@ -139,14 +146,14 @@
 
 [SUBMENU_START:utility article]
 
-.Grainflail. [effort:2] [phys:arms,one-armed] *CARPENTRY*   		/120/ 		  	|-1|	
-{Staff} [remove]
+.Grainflail. [effort:2] [phys:arms,one-armed] *CARPENTRY*   		/120/ 			%30%  	|-1|	
+{Slender trunk} [remove] [noquality]
 {Leather} #0.5# [remove]
 {Axe} <Carving axe>		
 {Knife}
 
-.Wooden cup.  [effort:2] [phys:arms,one-armed]  *CARPENTRY*   		/60/ 		  	|-1|	
-.Wooden bowl. [effort:2] [phys:arms,one-armed]  *CARPENTRY*   		/120/  			
+.Wooden cup.  [effort:2] [phys:arms,one-armed]  *CARPENTRY*   		/60/ 			%20%  	|-1|	
+.Wooden bowl. [effort:2] [phys:arms,one-armed]  *CARPENTRY*   		/120/ 			%20%  			
 {Block of wood} [remove] [noquality]
 {Axe} 		<Carving axe>	
 {Knife}	
@@ -155,7 +162,7 @@
 {Cloth} #1# [remove]          [patchwise]
 {Cutting weapon or by hand}
 
-.Birch-bark bandage. "Bandage"  *TIMBERCRAFT* [effort:1] [phys:hands,one-armed] /40/ |-2| [noquality] 
+.Birch-bark bandage. "Bandage"  *TIMBERCRAFT* [effort:1] [phys:hands,one-armed] /40/ |-1| [noquality] 
 {Knife} <Small knife>
 {Birch-bark strip}   =38=   [remove]
 [WEIGHT:0.5]
@@ -183,6 +190,12 @@
 .Birch-bark basket. [effort:1]  [phys:hands,one-armed] [assist:1] *CARPENTRY*  /5h/          
 {Birch-bark strip}   =60=   [remove]
 {Knife}                     
+
+.Vasta.    [effort:1] [phys:arms,one-armed]     *CARPENTRY*        /10/		%25% [noquality] 
+{Birch twig}   [remove] (40)
+{Birch withe}  [remove] (1)
+{Knife} <Small knife>                    
+
 
 [SUBMENU_END:utility article]
 
@@ -217,8 +230,8 @@
 
 [SUBMENU_START:lumber]
 
-.Wooden stake. 	[effort:1] [phys:arms,one-armed]  *TIMBERCRAFT* 	(8) 	/30/			%10%	|-2|	[patch]
-.Staff.		[effort:1] [phys:arms,one-armed]  *TIMBERCRAFT*		/15/			%30%	|-2|	[patch]
+.Wooden stake. 	[effort:1] [phys:arms,one-armed]  *TIMBERCRAFT* 	(8) 	/30/			%40%	|-2|	[patch]
+.Staff.		[effort:1] [phys:arms,one-armed]  *TIMBERCRAFT*		/15/			%60%	|-2|	[patch]
 {Cutting weapon} <Axe>	
 {Slender trunk}	[remove]							[patchwise] [noquality]
 
@@ -240,7 +253,7 @@
 {Tying equipment} =5= [remove]
 
 .Ski stick. [effort:1] [phys:hands,one-armed] *CARPENTRY*		/60/	
-{Staff} [remove]
+{Slender trunk} [remove] [noquality]
 {Axe} 
 {Leather}  #1# [remove]
 
@@ -249,9 +262,9 @@
 {Rope}		=10=    [remove]
 {Cutting weapon} <Axe> 			
 
-.Sesta.	[effort:2] [phys:hands,one-armed]	*COMMON*	/25/			%20%	|-2|	
+.Sesta.	[effort:2] [phys:hands,one-armed]	*COMMON*	/25/			%50%	|-2|	
 {Cutting weapon}<Axe>	
-{Staff}	[remove]
+{Slender trunk}	[remove] [noquality]
 
 [SUBMENU_END:transport]
 

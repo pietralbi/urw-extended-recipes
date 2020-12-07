@@ -2,13 +2,13 @@
 
 [SUBMENU_START:baking]
 
-.Flatbread. (5)	    *COOKERY*	/45/ 		%30%	|-1|
+.Flatbread. (5)	    *COOKERY*	/45/ 		%30%	|-1|	:148:  
 {Flour}     #0.5#   [remove] [roast] [name]
 {Water}     #0.25#  [remove] 
 {Seasoning} #0.15#  [remove] [roast] [optional]
 [TILEGFX:it-flbread]
 
-.Bake Hard Biscuit.  (6)	*COOKERY*	/45/    \3h\  %-50% |1|
+.Bake Hard Biscuit.  (6)	*COOKERY*	/45/    \3h\  %-50% |1|	
 {Flour}      	#3#    	[remove] [roast] [name:%s Biscuit]
 {Water}      	#0.5#  	[remove]
 {Seasoning}  	#0.25#  [remove] [roast] [optional]
@@ -19,7 +19,7 @@
 [WATER:0]
 //TODO: use a new graphic
 
-.Render Fat.  *COOKERY*	/5/  \1h\  |-1|
+.Render Fat.  *COOKERY*	/5/  \1h\  |-1|	
 {* fat} #0.25# [remove] [boil] 'Fat to render'
 {* fat} #0.25# [remove] [boil] [optional] 'More fat'
 {* fat} #0.25# [remove] [boil] [optional] 'More fat'
@@ -34,34 +34,34 @@
 
 [SUBMENU_START:porridge]
 
-.Porridge. 		*COOKERY*	 /30/  	%50%	|-1|
-{Flour} 	#1# 	[remove] [boil] [name]
+.Porridge. 		*COOKERY*	 /30/  	%50%	|-1|	:148:  
+{Flour} 	#0.4# 	[remove] [boil] [name]
+{Water} 	#1# 	[remove] 
 {Flour}     #1#     [remove] [boil] [optional]
 {Milk}      #1#     [remove] [boil] [optional]
 {Seasoning} #0.25#  [remove] [boil] [optional]
-{Water} 	#2# 	[remove]
 
-.Oven porridge. 		*COOKERY* /5/   \320\ 	%50%	|-1|
-{Flour} 	#2# 	[remove] [bake] [name]
+.Oven porridge. 		*COOKERY* /5/   \320\ 	%50%	|-1|	:148:  
+{Flour} 	#0.4# 	[remove] [bake] [name]
+{Water} 	#1# 	[remove] 
 {Grains}    #1#     [remove] [bake] [optional]
 {Berries}   #1#     [remove] [bake] [optional]
 {Milk}      #1#     [remove] [bake] [optional]
-{Water} 	#2# 	[remove]
 
-.Seed porridge.		*COOKERY*	/30/    %50%	|-1|
-{Seeds} 	#0.5# 	[remove] [boil] [name:%s porridge]
+.Seed porridge.		*COOKERY*	/30/    %50%	|-1|	:148:  
+{Seeds} 	#0.4# 	[remove] [boil] [name:%s porridge]
+{Water} 	#1#     [remove] 
 {Seeds}     #2#     [remove] [boil] [optional]
 {Milk}      #1#     [remove] [boil] [optional]
-{Water} 	#2#     [remove]
 
-.Berry porridge.	*COOKERY*	/15/  	\90\ 	%50%	|-1|
-{Berries}   #1#     [remove] [boil] [name:%s porridge]
-{Berries}   #1#     [remove] [boil] [optional]
-{Flour} 	#0.5#  	[remove] [boil] [optional]
-{Milk}      #0.5#   [remove] [boil] [optional]
-{Water}	   	#0.5#  	[remove]
+.Berry porridge.	*COOKERY*	/15/  	\90\ 	%50%	|-1|	:148:  
+{Berries} 	#1#     [remove] [boil] [name:%s porridge]
+{Water}	   	#0.5#  	[remove] 
+{Flour} 	#0.1#  	[remove] [boil] [optional] 
+{Berries}       #1#     [remove] [boil] [optional]
+{Flour} 	#1#  		[remove] [boil] [optional]
 
-.Dried berry porridge.  *COOKERY*   /30/    \120\   %50%    |-1|
+.Dried berry porridge.  *COOKERY*   /30/    \120\   %50%    |-1|	
 {dried*berries} #1#   [remove] [boil] [name:%s porridge] 'dried berries'
 {Flour}         #0.5# [remove] [boil] [optional]
 {Milk}          #0.5# [remove] [boil] [optional]
@@ -71,93 +71,94 @@
 
 [SUBMENU_START:meat]
 
-.Meat stew. 		*COOKERY* /30/  \240\	%20%
-{Raw meat}	#3#	[remove] [bake] [name:%s stew]
-{Water}		#1#	[remove] [bake]
-{Vegetables}	#0.5#	[remove] [bake] [optional]
-{Mushrooms}	#0.5#	[remove] [bake] [optional]
-{Seasoning}	#0.25#	[remove] [bake] [optional]
-{Knife}	'+for chopping'
-
-.Dried meat stew.   *COOKERY*   /45/    \240\   %30%
-{dried*cut} (4) [remove] [bake] [name:%s stew] 'Dried meat'
-{Water}     #4# [remove] [bake]
-{Vegetables}	#0.5#	[remove] [bake] [optional]
-{Mushrooms}	#0.5#	[remove] [bake] [optional]
-{Seasoning}	#0.25#	[remove] [bake] [optional]
-{Knife}	'+for chopping'
-
-.Smoked meat pie.   *COOKERY*   /1h/    \2h\   %50% |+1|
-{smoked*cut} (3) [remove] [roast] [name:%s meat pie] 'Smoked meat'
-{Flour} #2#      [remove] [roast]
-{Water}     #0.5# [remove] [roast]
-{Tallow}    #0.25# [remove] [roast]
-{Vegetables}	#0.5#	[remove] [roast] [optional]
-{Seasoning}	#0.25#	[remove] [roast] [optional]
-{Knife}	'+for chopping'
-
-.Meat soup. 		*COOKERY* /30/  \45\	%20%
-{Raw meat}	#2# 	[remove] [boil] [name:%s soup]
+.Meat soup. 		*COOKERY* /30/  \45\	%20%	:148:  
+{Raw meat}	#2# 	[remove] [boil] [name]
 {Water}		#2.5#	[remove] [boil]
 {Vegetables}	#0.5#	[remove] [boil]
+{Knife}	'+for chopping and peeling' 
 {Seasoning}	#0.25#	[remove] [optional] [boil]
-{Knife}	'+for chopping and peeling'
+
+.Meat stew. 		*COOKERY* /30/  \240\	%20%	:148:  
+{Raw meat}	#3#	[remove] [bake] [name]
+{Water}		#0.25#	[remove] 
+{Knife}	'+for chopping'
+{Vegetables}	#0.5#	[remove] [bake] [optional]
+{Mushrooms}	#0.5#	[remove] [bake] [optional]
+{Seasoning}	#0.25#	[remove] [bake] [optional]
+
+.Dried meat stew.   *COOKERY*   /45/    \240\   %30%	
+{dried*cut} (4) [remove] [bake] [name:%s stew] 'Dried meat'
+{Water}     #4# [remove] [bake]
+{Knife}	'+for chopping'
+{Vegetables}	#0.5#	[remove] [bake] [optional]
+{Mushrooms}	#0.5#	[remove] [bake] [optional]
+{Seasoning}	#0.25#	[remove] [bake] [optional]
+
+.Smoked meat pie.   *COOKERY*   /1h/    \2h\   %50% |+1|
+{smoked*cut} (3) [remove] [bake] [name:%s meat pie] 'Smoked meat'
+{Flour} #2#      [remove] [bake]
+{Water}     #0.5# [remove] [bake]
+{Tallow}    #0.25# [remove] [bake]
+{Vegetables}	#0.5#	[remove] [bake] [optional]
+{Seasoning}	#0.25#	[remove] [bake] [optional]
+{Knife}	'+for chopping'
+
 
 [SUBMENU_END:meat]
 
 [SUBMENU_START:fish]
 
-.Fish soup. 		*COOKERY* /30/  \45\	%20%
+.Fish soup. 		*COOKERY* /30/  \45\	%20%	:148:  
 {Raw fish}      #2#     [remove] [boil] [name:%s soup]
 {Water}		#2.5#	[remove] [boil]
 {Vegetables}	#0.5#	[remove] [boil]
+{Knife}	'+for chopping and peeling' 
 {Seasoning}	#0.25#	[remove] [optional] [boil]
-{Knife}	'+for chopping and peeling'
 
 [SUBMENU_END:fish]
 
 [SUBMENU_START:vegetable]
 
-.Pea soup. 		*COOKERY* /10/  \120\	%20%
+.Pea soup. 		*COOKERY* /10/  \120\	%20%	:148:  
 {Peas} 			#2# 	[remove] [boil]
 {Water}		  	#2.5#	[remove] [boil]
 {Raw meat}	  	#1#	[remove] [boil] [optional]
 {Seasoning}	  	#0.25#	[remove] [optional] [boil]
 {Flour}         #0.5# [remove] [boil] [optional]
 
-.Green soup. 		*COOKERY* /5/  \10\	%20%
-{Herbs} 		#3#	[remove] [boil] [name:%s soup]
-{Water}		  	#1.5#	[remove] [boil]
-{Flour}			#0.25#	[remove] [boil] [optional]
-{Seasoning}	  	#0.25#	[remove] [optional] [boil]
+.Green soup. 		*COOKERY* /5/  \10\	%20%	:148: 
+{Herbs} 		#1#	[remove] [boil] [name:%s soup]
+{Water}		  	#0.5#	[remove] [boil]			
+{Flour}			#0.1#	[remove] [boil] [optional]	
+{Seasoning}	  	#0.1#	[remove] [optional] [boil]	
 
-.Vegetable soup. 		*COOKERY* /30/  \45\	%20%
+.Vegetable soup. 		*COOKERY* /30/  \45\	%20%	:148:  
 {Vegetables} 		#2#	[remove] [boil] [name:%s soup]
 {Knife} '+for chopping and peeling'
 {Water}		  	#2#	[remove] [boil]
 {Seasoning}	  	#0.25#	[remove] [optional] [boil]
 
-.Mushroom soup. 		*COOKERY* /10/  \20\	%20%
+.Mushroom soup. 		*COOKERY* /10/  \20\	%20%	:148:  
 {Mushrooms}		#2#     [remove] [boil] [name:%s soup]
 {Water}			#0.75#	[remove] [boil]
 {Flour}			#0.25#	[remove] [boil] [optional]
 {Seasoning}		#0.25#	[remove] [boil] [optional]
 
-.Vegetable stew.		*COOKERY* /5/  \90\	%20%
+.Vegetable stew.		*COOKERY* /5/  \90\	%20%	:148:  
 {Vegetables} 		#3#	[remove] [bake] [name:%s stew]
 {Water}			#0.25#	[remove] [bake]
 {Mushrooms}		#0.5#	[remove] [bake] [optional]
 {Knife} '+for chopping and peeling'
 {Seasoning}		#0.25#	[remove] [bake] [optional]
 
-.Roasted vegetables. *COOKERY* /5/ \30\ |-2| [patch:10]
+.Roasted vegetables. *COOKERY* /5/ \30\ |-2| [patch:10]	
 {Vegetables} #1.0# [remove] [roast] [name:Roasted %s] [naming:original] [patchwise]
 {Seasoning} #0.1# [remove] [roast] [optional] [patchwise]
 [COOK_WEIGHT_DIV:1.5]
 
 [SUBMENU_END:vegetable]
 
-[SUBMENU_START:Drying]
+[SUBMENU_START:Drying vegetables]
 
 .Dry Berries.       *COOKERY*  /5/ \10d\   |-2|  [patch:20]
 {Berries}        [remove] [roast] [name:dried %s] [naming:original] [patchwise]
@@ -171,7 +172,7 @@
 [WATER:0]
 [COOK_WEIGHT_DIV:5]
 
-[SUBMENU_END:Drying]
+[SUBMENU_END:Drying vegetables]
 
 
 
