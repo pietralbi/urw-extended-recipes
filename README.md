@@ -1,5 +1,5 @@
 # Aruberuto's extended recipes 
-### Mod for UnReal World 3.60 
+### Mod for UnReal World 3.63 
 This is a set of modifications for the roguelike game [UnReal World](http://www.unrealworld.fi/) developed by Sami Maaranen and Erkka Lehmus.
 
 This mod started as a simple modification of [Caethan's UnReal World self-sufficiency mod](https://github.com/caethan/urw-sufficiency), 
