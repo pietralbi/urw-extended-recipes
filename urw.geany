@@ -27,22 +27,20 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=14
+current_page=12
 FILE_NAME_0=5707;Markdown;0;EUTF-8;1;1;1;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2FREADME.md;0;4
-FILE_NAME_1=961;None;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2Fmenudef_sufficiency.txt;0;4
+FILE_NAME_1=957;None;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2Fmenudef_sufficiency.txt;0;4
 FILE_NAME_2=1678;None;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2Fnotes.txt;0;4
-FILE_NAME_3=2245;Markdown;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2FUnrealWorld.lnk%2Fdiy_testing.txt;0;4
-FILE_NAME_4=1528;Markdown;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2Fdiy_glossary.txt;0;4
-FILE_NAME_5=1208;Markdown;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2Fdiy_sufficiency.txt;0;4
-FILE_NAME_6=4231;None;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2Fdiy_weaving.txt;0;4
-FILE_NAME_7=10463;Markdown;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2Fdiy_ironworking.txt;0;4
-FILE_NAME_8=988;None;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2FBAC%2Fdiy_BAC_Earthenware.txt;0;4
-FILE_NAME_9=410;None;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2FBAC%2Fdiy_BAC_Weapons.txt;0;4
-FILE_NAME_10=1637;None;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2FBAC%2Fdiy_BAC_Toolmaking.txt;0;4
-FILE_NAME_11=0;None;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2FBAC%2Fdiy_BAC_Bowying.txt;0;4
-FILE_NAME_12=515;None;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2FBAC%2Fdiy_BAC_Boneworking.txt;0;4
-FILE_NAME_13=0;None;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2FBAC%2Fdiy_BAC_Metalworking.txt;0;4
-FILE_NAME_14=8067;None;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2FBAC%2Fdiy_BAC_Armor_group_one.txt;0;4
+FILE_NAME_3=107999;None;0;EISO-8859-1;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2FGAME.NFO;0;4
+FILE_NAME_4=2469;Markdown;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2Fdiy_glossary.txt;0;4
+FILE_NAME_5=13798;Markdown;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2Fdiy_ironworking.txt;0;4
+FILE_NAME_6=605;None;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2Fcookery_glossary.txt;0;4
+FILE_NAME_7=1381;Markdown;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2Fdiy_sufficiency.txt;0;4
+FILE_NAME_8=5380;None;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2Fdiy_weaving.txt;0;4
+FILE_NAME_9=512;Markdown;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2FUnrealWorld.lnk%2Fdiy_testing.txt;0;4
+FILE_NAME_10=742;None;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2FUnrealWorld.lnk%2Fmenudef_testing.txt;0;4
+FILE_NAME_11=218;None;0;EUTF-8;1;1;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2Fbinary_notes.txt;0;4
+FILE_NAME_12=4868;Python;0;EUTF-8;0;0;0;%2Fhome%2Flex%2FDesktop%2Fmy-urw-suff%2FUnrealWorld.lnk%2FSEPPO%2Fwhereismyrobber.py;0;4
 
 [VTE]
 last_dir=/home/lex
